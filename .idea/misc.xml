@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/font_bold.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/pop_bold.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/pop_light.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/pop_medium.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/pop_regular.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/poppin_semibold.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_extrabold.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_light.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_regular.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_semibold.xml" value="0.30364583333333334" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
