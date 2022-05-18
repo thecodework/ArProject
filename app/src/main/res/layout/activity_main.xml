@@ -13,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Furnish AR"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="@font/postnobillscolombo_bold"
         android:gravity="center"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="180dp"
         android:textColor="@color/Brown"
        android:textSize="36sp"/>
     <TextView
@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:text="By TCW innovation Lab"
         android:layout_height="wrap_content"
+
         android:padding="2dp"
         android:textSize="20sp"
         android:gravity="center"
