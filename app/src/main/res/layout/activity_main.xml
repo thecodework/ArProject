@@ -16,17 +16,17 @@
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:layout_marginTop="240dp"
-        android:textColor="#7E2116"
+        android:textColor="@color/Brown"
        android:textSize="36sp"/>
     <TextView
-        android:textColor="#E5E5E5"
+        android:textColor="@color/white_new"
         android:layout_width="match_parent"
         android:text="By TCW innovation Lab"
         android:layout_height="wrap_content"
         android:padding="2dp"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:gravity="center"
-        android:shadowColor="#C0C0C0"
+        android:shadowColor="@color/OffWhite"
         android:shadowDx="8"
         android:shadowDy="8"
         android:shadowRadius="1.5" />
@@ -36,14 +36,14 @@
         android:text="When your home meets your lifestyle"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:textColor="#7E2116"
+        android:textColor="@color/Brown"
         android:textSize="16sp"/>
     <Button
         android:id="@+id/btnSlideLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#7E2116"
+        android:background="@color/Brown"
         android:layout_marginTop="30dp"
         android:text="Slide Left" />
     <Button
