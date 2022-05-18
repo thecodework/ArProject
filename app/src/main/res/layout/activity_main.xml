@@ -29,7 +29,7 @@
         android:shadowColor="@color/OffWhite"
         android:shadowDx="8"
         android:shadowDy="8"
-        android:shadowRadius="1.5" />
+        android:shadowRadius="1.8" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,17 +38,20 @@
         android:gravity="center"
         android:textColor="@color/Brown"
         android:textSize="16sp"/>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSlideLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@color/Brown"
+        android:background="@color/Light_Brown"
         android:layout_marginTop="30dp"
-        android:text="Slide Left" />
-    <Button
+        android:padding="5dp"
+        android:text="Login"
+        android:textColor="@color/white_new"/>
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSlideRight"
         android:layout_width="wrap_content"
+        android:background="@color/Light_Brown"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnSlideLeft"
         android:layout_gravity="center_horizontal"

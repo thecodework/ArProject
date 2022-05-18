@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="Brown">#7E2116</color>
+    <color name="Light_Brown">#b06a5b</color>
     <color name="OffWhite">#C0C0C0</color>
     <color name="white_new">#E5E5E5</color>
 </resources>
