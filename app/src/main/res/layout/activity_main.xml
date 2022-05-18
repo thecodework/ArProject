@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Furnish AR"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:layout_marginTop="240dp"
+        android:textColor="#7E2116"
+       android:textSize="36sp"/>
+    <TextView
+        android:textColor="#E5E5E5"
+        android:layout_width="match_parent"
+        android:text="By TCW innovation Lab"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:shadowColor="#C0C0C0"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowRadius="1.5" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When your home meets your lifestyle"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="#7E2116"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btnSlideLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#7E2116"
+        android:layout_marginTop="30dp"
+        android:text="Slide Left" />
+    <Button
+        android:id="@+id/btnSlideRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSlideLeft"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Slide Right" />
+
+
+</LinearLayout>
