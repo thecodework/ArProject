@@ -23,9 +23,9 @@
         android:layout_width="match_parent"
         android:text="By TCW innovation Lab"
         android:layout_height="wrap_content"
-
+        android:fontFamily="@font/poppins_light"
         android:padding="2dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:gravity="center"
         android:shadowColor="@color/OffWhite"
         android:shadowDx="8"
@@ -35,12 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="When your home meets your lifestyle"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:textColor="@color/Brown"
         android:textSize="16sp"/>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSlideLeft"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -48,16 +48,19 @@
         android:layout_marginTop="30dp"
         android:padding="5dp"
         android:text="Login"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
         android:textColor="@color/white_new"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSlideRight"
+    <TextView
+        android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
-        android:background="@color/Light_Brown"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnSlideLeft"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="Slide Right" />
+        android:text="Sign up"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:textColor="@color/Brown"/>
 
 
 </LinearLayout>
