@@ -8,6 +8,7 @@
         android:layout_width="@dimen/space_140"
         android:layout_height="@dimen/space_140"
         android:layout_marginTop="@dimen/space_8"
+        android:layout_marginHorizontal="@dimen/space_8"
         app:cardCornerRadius="@dimen/space_24">
         <ImageView
             android:id="@+id/imageItem"

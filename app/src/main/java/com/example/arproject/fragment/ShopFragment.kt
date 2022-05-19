@@ -6,10 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.arproject.R
+import com.example.arproject.adapter.ShopAdapter
+import com.example.arproject.databinding.FragmentShopBinding
+import com.example.arproject.model.ModelCategory
 
 
 class ShopFragment : Fragment() {
-
+    lateinit var binding: FragmentShopBinding
+    var arraylist: ArrayList<ModelCategory> = ArrayList()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -19,8 +23,19 @@ class ShopFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shop, container, false)
+        binding = FragmentShopBinding.inflate(inflater, container, false)
+        initializer()
+        return binding.root
+    }
+
+    private fun initializer() {
+        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
+        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
+        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
+        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
+        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
+        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
+        binding.rvShop.adapter = ShopAdapter(context, arraylist)
     }
 
 }
