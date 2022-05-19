@@ -19,6 +19,8 @@
                 android:id="@+id/imageItem"
                 android:layout_width="@dimen/space_80"
                 android:layout_height="@dimen/space_60"
+                android:layout_marginHorizontal="@dimen/space_4"
+                android:layout_marginTop="@dimen/space_4"
                 android:src="@drawable/sofa" />
 
             <TextView
