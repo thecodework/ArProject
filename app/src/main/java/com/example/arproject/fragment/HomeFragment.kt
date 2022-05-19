@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.arproject.R
 import com.example.arproject.adapter.CategoryAdapter
+import com.example.arproject.adapter.ProductAdapter
 import com.example.arproject.databinding.FragmentHomeBinding
 import com.example.arproject.model.ModelCategory
 
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
     var arraylist: ArrayList<ModelCategory> = ArrayList()
+    var productlist: ArrayList<ModelCategory> = ArrayList()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -39,6 +41,13 @@ class HomeFragment : Fragment() {
         arraylist.add(ModelCategory(R.drawable.bed, "Bed"))
         arraylist.add(ModelCategory(R.drawable.sofa, "Sofa"))
         arraylist.add(ModelCategory(R.drawable.bed, "Bed"))
+        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
+        productlist.add(ModelCategory(R.drawable.table, "table"))
+        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
+        productlist.add(ModelCategory(R.drawable.table, "table"))
+        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
+        productlist.add(ModelCategory(R.drawable.table, "table"))
         binding.rvCategory.adapter=CategoryAdapter(context,arraylist)
+        binding.rvProducts.adapter=ProductAdapter(context,productlist)
     }
 }
