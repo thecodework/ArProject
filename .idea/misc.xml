@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/item_selector.xml" value="0.1095" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/linearback.xml" value="0.1095" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/pop_bold.xml" value="0.20277777777777778" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/pop_light.xml" value="0.20277777777777778" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/pop_medium.xml" value="0.20277777777777778" />
@@ -13,11 +15,14 @@
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/post_light.xml" value="0.20277777777777778" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/post_regular.xml" value="0.20277777777777778" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/post_semibold.xml" value="0.20277777777777778" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_shop.xml" value="0.2" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/search.xml" value="0.25" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/menu/bottonmenu.xml" value="0.2" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
