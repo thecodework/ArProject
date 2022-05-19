@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.arproject.databinding.ActivityDashboardBinding
+import com.example.arproject.fragment.CartFragment
+import com.example.arproject.fragment.HomeFragment
+import com.example.arproject.fragment.ProfileFragment
+import com.example.arproject.fragment.ShopFragment
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
