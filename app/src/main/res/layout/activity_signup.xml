@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/img"
     android:orientation="vertical"
-    android:id="@+id/llOnboardingScreen1"
-    tools:context=".SplashScreen.OnBoardingScreen1">
+    android:id="@+id/llSignUp"
+    tools:context=".SiginUpActivity">
 
     <TextView
         android:id="@+id/tvfurnish"
@@ -16,59 +16,72 @@
         android:text="@string/furnish_ar"
         android:fontFamily="@font/postnobillscolombo_bold"
         android:gravity="center"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="180dp"
         android:textColor="@color/Brown"
         android:textSize="36sp"/>
     <TextView
         android:id="@+id/tvInnovation"
-        android:textColor="@color/black"
+        android:textColor="#000000"
         android:layout_width="match_parent"
         android:text="@string/innovation_lab"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
+        android:fontFamily="@font/poppins_semibold"
         android:padding="2dp"
         android:textSize="18sp"
         android:gravity="center"
-        android:shadowColor="@color/OffWhite"
+        android:shadowColor="@color/dark_gray"
         android:shadowDx="8"
         android:shadowDy="8"
         android:shadowRadius="1.8" />
-    <TextView
-        android:id="@+id/tvHomeMeets"
+
+    <EditText
+        android:id="@+id/edName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/home_meets_lifestyle"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center"
-        android:textColor="@color/Brown"
-        android:textSize="20sp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="@string/enter_your_name"
+        android:textColorHint="@color/white_new"
+        android:textSize="22sp"
+        android:background="@drawable/ic_round_button"/>
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="@string/enter_email"
+        android:textColorHint="@color/white_new"
+        android:textSize="22sp"
+        android:background="@color/Light_Brown"/>
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="@string/enter_password"
+        android:textColorHint="@color/white_new"
+        android:textSize="22sp"
+        android:background="@color/Light_Brown"/>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/ic_login_button"
+        android:background="@color/Brown"
         android:layout_marginTop="30dp"
         android:paddingLeft="45dp"
         android:paddingRight="45dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:text="@string/login"
-        android:textSize="20sp"
+        android:text="@string/create_account"
+        android:textSize="16sp"
         android:fontFamily="@font/poppins_medium"
         android:textColor="@color/white_new"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSignUpOnBoarding1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="@string/signup"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:background="@drawable/ic_tranperant_button"
-        android:textColor="@color/Brown"/>
-
 
 </LinearLayout>

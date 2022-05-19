@@ -12,54 +12,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/furnish_ar"
+        android:text="WelCome to MainActivity"
         android:fontFamily="@font/postnobillscolombo_bold"
         android:gravity="center"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="110dp"
         android:textColor="@color/Brown"
-       android:textSize="36sp"/>
-    <TextView
-        android:textColor="@color/white_new"
-        android:layout_width="match_parent"
-        android:text="@string/innovation_lab"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:padding="2dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:shadowColor="@color/OffWhite"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="1.8" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/home_meets_lifestyle"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center"
-        android:textColor="@color/Brown"
-        android:textSize="16sp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/Light_Brown"
-        android:layout_marginTop="30dp"
-        android:padding="5dp"
-        android:text="@string/login"
-        android:textSize="20sp"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/white_new"/>
-    <TextView
-        android:id="@+id/tvSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="@string/signup"
-        android:textSize="20sp"
-        android:textColor="@color/Brown"/>
-
-
+        android:textSize="36sp"/>
 </LinearLayout>
