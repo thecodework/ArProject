@@ -16,4 +16,5 @@
     <color name="grey">#999999</color>
     <color name="yellow">#FFBD12</color>
     <color name="red">#AF0000</color>
+    <color name="statusbar_color">#F3EAEA</color>
 </resources>

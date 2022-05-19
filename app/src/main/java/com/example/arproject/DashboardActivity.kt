@@ -18,6 +18,7 @@ class DashboardActivity : AppCompatActivity() {
     private fun initializer() {
         supportFragmentManager.beginTransaction().replace(R.id.frameLayout, HomeFragment())
             .commit()
+        Utils.changeStatusBar(this, R.color.statusbar_color)
     }
 
     private fun setListener() {
