@@ -52,7 +52,7 @@ class HomeFragment : Fragment() {
         productlist.add(ModelCategory(R.drawable.table, "table"))
         productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
         productlist.add(ModelCategory(R.drawable.table, "table"))
-        binding.rvCategory.adapter = CategoryAdapter(context, arraylist)
-        binding.rvProducts.adapter = ProductAdapter(context, productlist)
+        binding.rvCategory.adapter = CategoryAdapter(arraylist)
+        binding.rvProducts.adapter = ProductAdapter(productlist)
     }
 }

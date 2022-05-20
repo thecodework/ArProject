@@ -5,7 +5,7 @@
     <data>
 
         <variable
-            name="model"
+            name="modelCategory"
             type="com.example.arproject.model.ModelCategory" />
     </data>
 
@@ -32,7 +32,8 @@
                     android:layout_height="@dimen/space_60"
                     android:layout_marginHorizontal="@dimen/space_4"
                     android:layout_marginTop="@dimen/space_4"
-                    android:src="@{model.categoryimage}" />
+                    app:imageResource="@{modelCategory.categoryimage}"
+                    android:src="@drawable/sofa" />
 
                 <TextView
                     android:id="@+id/tvItem"
@@ -40,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="@{model.categoryname}"
+                    android:text="@{modelCategory.categoryname}"
                     android:textColor="@color/Brown"
                     android:textSize="14sp" />
             </LinearLayout>

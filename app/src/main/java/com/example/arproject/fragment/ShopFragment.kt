@@ -41,7 +41,7 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
         arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
         arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
         arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
-        binding.rvShop.adapter = ShopAdapter(context, arraylist, this)
+        binding.rvShop.adapter = ShopAdapter(arraylist, this)
     }
 
     override fun onClick(position: Int) {
