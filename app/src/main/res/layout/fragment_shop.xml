@@ -78,8 +78,8 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="@dimen/space_16"
             android:layout_marginTop="@dimen/space_4"
-            android:paddingBottom="@dimen/space_8"
             android:orientation="vertical"
+            android:paddingBottom="@dimen/space_8"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             tools:listitem="@layout/row_product" />
