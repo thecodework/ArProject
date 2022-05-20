@@ -11,7 +11,6 @@ class DetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_details)
-       // binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initializer()
         setListener()

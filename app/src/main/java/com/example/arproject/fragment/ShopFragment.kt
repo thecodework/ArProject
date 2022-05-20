@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import com.example.arproject.DetailsActivity
 import com.example.arproject.R
 import com.example.arproject.adapter.ShopAdapter
@@ -25,7 +26,10 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentShopBinding.inflate(inflater, container, false)
+        binding = DataBindingUtil.inflate(
+            inflater,
+            R.layout.fragment_shop, container, false
+        )
         initializer()
         return binding.root
     }

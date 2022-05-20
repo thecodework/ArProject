@@ -1,15 +1,17 @@
 package com.example.arproject.fragment
 
+import com.example.arproject.R
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.arproject.R
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import com.example.arproject.adapter.CategoryAdapter
 import com.example.arproject.adapter.ProductAdapter
 import com.example.arproject.databinding.FragmentHomeBinding
 import com.example.arproject.model.ModelCategory
+
 
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
@@ -24,7 +26,10 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = DataBindingUtil.inflate(
+            inflater,
+            R.layout.fragment_home, container, false
+        )
         initializer()
         setListener()
         return binding.root
@@ -47,7 +52,7 @@ class HomeFragment : Fragment() {
         productlist.add(ModelCategory(R.drawable.table, "table"))
         productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
         productlist.add(ModelCategory(R.drawable.table, "table"))
-        binding.rvCategory.adapter=CategoryAdapter(context,arraylist)
-        binding.rvProducts.adapter=ProductAdapter(context,productlist)
+        binding.rvCategory.adapter = CategoryAdapter(context, arraylist)
+        binding.rvProducts.adapter = ProductAdapter(context, productlist)
     }
 }

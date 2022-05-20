@@ -1,101 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@color/white_new"
-    android:layout_height="match_parent">
+<layout>
 
-    <LinearLayout
-        android:id="@+id/linearTitle"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/space_12"
-        android:layout_marginTop="@dimen/space_20"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@color/white_new">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Shop by Category"
-            android:textColor="@color/black_text"
-            android:textSize="18sp" />
+            android:layout_marginHorizontal="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:text="See All"
-            android:textColor="@color/blue"
-            android:textSize="12sp" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Shop by Category"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/space_8"
-        android:layout_marginTop="@dimen/space_4"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearTitle"
-        tools:listitem="@layout/row_category" />
-
-    <LinearLayout
-        android:id="@+id/linearTop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/space_12"
-        android:layout_marginTop="@dimen/space_20"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvCategory">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Top Trending Products"
-            android:textColor="@color/black_text"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:text="See All"
-            android:textColor="@color/blue"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearTop">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="See All"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvProducts"
+            android:id="@+id/rvCategory"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="@dimen/space_16"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_8"
             android:layout_marginTop="@dimen/space_4"
-            android:paddingBottom="@dimen/space_8"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="2"
-            tools:listitem="@layout/row_product" />
-    </androidx.core.widget.NestedScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearTitle"
+            tools:listitem="@layout/row_category" />
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvCategory">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Top Trending Products"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="See All"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearTop">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/space_16"
+                android:layout_marginTop="@dimen/space_4"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_8"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/row_product" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
