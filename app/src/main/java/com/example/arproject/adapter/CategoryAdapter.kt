@@ -20,8 +20,8 @@ class CategoryAdapter(private val context: Context?, private val arraylist: Arra
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         if (context != null) {
             with(holder) {
-                binding.tvItem.text = arraylist[position].categoryname
-                binding.imageItem.setImageResource(arraylist[position].categoryimage)
+             //   binding.tvItem.text = arraylist[position].categoryname
+             //   binding.imageItem.setImageResource(arraylist[position].categoryimage)
             }
         }
     }

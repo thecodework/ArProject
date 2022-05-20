@@ -2,13 +2,16 @@ package com.example.arproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityDetailsBinding
+
 
 class DetailsActivity : AppCompatActivity() {
     lateinit var binding: ActivityDetailsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailsBinding.inflate(layoutInflater)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_details)
+       // binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initializer()
         setListener()
