@@ -23,7 +23,7 @@ class OnBoardingScreen1: AppCompatActivity(){
         loginButton.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            finish()
+
         }
 
         signUpButton.setOnClickListener{
