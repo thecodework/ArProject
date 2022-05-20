@@ -2,26 +2,22 @@ package com.example.arproject.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.arproject.R
-import com.example.arproject.databinding.ActivityDashboardBinding.inflate
 import com.example.arproject.databinding.RowCategoryBinding
 import com.example.arproject.model.ModelCategory
 
 class CategoryAdapter(private val context: Context?, private val arraylist: ArrayList<ModelCategory>) :
-    RecyclerView.Adapter<CategoryAdapter.myholder>() {
+    RecyclerView.Adapter<CategoryAdapter.MyHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myholder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
         val binding =
             RowCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return myholder(binding)
+        return MyHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: myholder, position: Int) {
+    override fun onBindViewHolder(holder: MyHolder, position: Int) {
         if (context != null) {
             with(holder) {
                 binding.tvItem.text = arraylist[position].categoryname
@@ -34,8 +30,7 @@ class CategoryAdapter(private val context: Context?, private val arraylist: Arra
         return arraylist.size
     }
 
-    class myholder(val binding: RowCategoryBinding) :
+    class MyHolder(val binding: RowCategoryBinding) :
         RecyclerView.ViewHolder(binding.root) {
-
     }
 }

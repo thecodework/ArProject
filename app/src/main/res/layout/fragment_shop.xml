@@ -33,7 +33,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="20,000 items"
             android:textColor="@color/grey"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Sort"
             android:textColor="@color/blue"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Filter"
             android:textColor="@color/blue"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <View

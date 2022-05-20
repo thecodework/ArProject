@@ -2,40 +2,35 @@ package com.example.arproject.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.arproject.R
-import com.example.arproject.databinding.ActivityDashboardBinding.inflate
-import com.example.arproject.databinding.RowCategoryBinding
 import com.example.arproject.databinding.RowShopBinding
 import com.example.arproject.model.ModelCategory
 
 class ShopAdapter(
     private val context: Context?,
     private val arraylist: ArrayList<ModelCategory>,
-    val item: ItemClick
+    private val item: ItemClick
 ) :
-    RecyclerView.Adapter<ShopAdapter.myholder>() {
+    RecyclerView.Adapter<ShopAdapter.MyHolder>() {
 
     interface ItemClick {
         fun onClick(position: Int)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myholder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
         val binding =
             RowShopBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return myholder(binding)
+        return MyHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: myholder, position: Int) {
+    override fun onBindViewHolder(holder: MyHolder, position: Int) {
         if (context != null) {
             with(holder) {
                 binding.imageItem.setImageResource(arraylist[position].categoryimage)
-                binding.imageItem.setOnClickListener(View.OnClickListener {
+                binding.imageItem.setOnClickListener {
                     item.onClick(position)
-                })
+                }
             }
         }
     }
@@ -44,8 +39,7 @@ class ShopAdapter(
         return arraylist.size
     }
 
-    class myholder(val binding: RowShopBinding) :
+    class MyHolder(val binding: RowShopBinding) :
         RecyclerView.ViewHolder(binding.root) {
-
     }
 }

@@ -1,8 +1,7 @@
 package com.example.arproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.example.arproject.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
@@ -16,9 +15,8 @@ class DetailsActivity : AppCompatActivity() {
     }
 
     private fun setListener() {
-        binding.btnAR.setOnClickListener(View.OnClickListener {
-
-        })
+        binding.btnAR.setOnClickListener {
+        }
     }
 
     private fun initializer() {
@@ -27,5 +25,3 @@ class DetailsActivity : AppCompatActivity() {
         binding.imageItem.setImageResource(pic)
     }
 }
-
-

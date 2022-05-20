@@ -24,7 +24,7 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentShopBinding.inflate(inflater, container, false)
         initializer()
         return binding.root
@@ -46,5 +46,4 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
         intent.putExtra("image", pic)
         startActivity(intent)
     }
-
 }
