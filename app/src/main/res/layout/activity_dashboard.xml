@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_new"
+    android:background="@color/statusbar_color"
     tools:context=".DashboardActivity">
 
     <include
@@ -16,8 +16,8 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/space_68"
-        android:layout_marginBottom="@dimen/space_64"
+        android:layout_marginTop="@dimen/space_76"
+        android:layout_marginBottom="@dimen/space_56"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
