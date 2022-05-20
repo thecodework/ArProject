@@ -12,9 +12,16 @@ import com.example.arproject.databinding.RowCategoryBinding
 import com.example.arproject.databinding.RowShopBinding
 import com.example.arproject.model.ModelCategory
 
-class ShopAdapter(private val context: Context?, private val arraylist: ArrayList<ModelCategory>) :
+class ShopAdapter(
+    private val context: Context?,
+    private val arraylist: ArrayList<ModelCategory>,
+    val item: ItemClick
+) :
     RecyclerView.Adapter<ShopAdapter.myholder>() {
 
+    interface ItemClick {
+        fun onClick(position: Int)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myholder {
         val binding =
@@ -26,6 +33,9 @@ class ShopAdapter(private val context: Context?, private val arraylist: ArrayLis
         if (context != null) {
             with(holder) {
                 binding.imageItem.setImageResource(arraylist[position].categoryimage)
+                binding.imageItem.setOnClickListener(View.OnClickListener {
+                    item.onClick(position)
+                })
             }
         }
     }
