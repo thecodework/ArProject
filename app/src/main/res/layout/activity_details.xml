@@ -28,7 +28,7 @@
                 android:id="@+id/imageItem"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/blacksofa" />
 
             <LinearLayout
@@ -73,7 +73,6 @@
                 android:id="@+id/tvItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/space_8"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Comfy Sofa"
                 android:textColor="@color/Brown"
