@@ -23,7 +23,7 @@
             android:name=".ViewARModelFragment"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +35,7 @@
         <activity android:name=".SplashScreen.OnBoardingScreen1" />
         <activity android:name=".SplashScreen.OnBoardingScreen2" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SiginUpActivity" />
+        <activity android:name=".SignUpActivity" />
     </application>
 
     <meta-data android:name="com.google.ar.core" android:value="required" />

@@ -22,8 +22,9 @@
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.13297872340425532" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_view_armodel_fragment.xml" value="0.13072916666666667" />
-        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.2" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.25" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen2.xml" value="0.1" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen3.xml" value="0.10964912280701754" />
       </map>
@@ -34,5 +35,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.13297872340425532" />
+      </ProjectState>
+    </option>
   </component>
 </project>

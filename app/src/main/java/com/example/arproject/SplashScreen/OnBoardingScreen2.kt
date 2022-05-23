@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.arproject.R
-import com.example.arproject.SiginUpActivity
+import com.example.arproject.SignUpActivity
 
 class OnBoardingScreen2 : AppCompatActivity(){
 
@@ -15,7 +15,7 @@ class OnBoardingScreen2 : AppCompatActivity(){
 
         val button = findViewById<Button>(R.id.btnSignUp)
         button.setOnClickListener{
-            val intent = Intent(this, SiginUpActivity::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 

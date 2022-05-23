@@ -7,7 +7,7 @@
     android:background="@drawable/img"
     android:orientation="vertical"
     android:id="@+id/llSignUp"
-    tools:context=".SiginUpActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
         android:id="@+id/tvfurnish"
@@ -16,7 +16,7 @@
         android:text="@string/furnish_ar"
         android:fontFamily="@font/postnobillscolombo_bold"
         android:gravity="center"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="110dp"
         android:textColor="@color/Brown"
         android:textSize="36sp"/>
     <TextView

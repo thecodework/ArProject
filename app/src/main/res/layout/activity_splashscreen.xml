@@ -7,7 +7,7 @@
     android:background="@drawable/img"
     android:orientation="vertical"
     android:id="@+id/llHomeActivity"
-    tools:context=".HomeActivity">
+    tools:context=".SplashScreenActivity">
 
     <TextView
         android:id="@+id/tvfurnish"

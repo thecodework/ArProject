@@ -3,12 +3,11 @@ package com.example.arproject.SplashScreen
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.arproject.LoginActivity
 import com.example.arproject.R
-import com.example.arproject.SiginUpActivity
+import com.example.arproject.SignUpActivity
 
 class OnBoardingScreen1: AppCompatActivity(){
 
@@ -27,7 +26,7 @@ class OnBoardingScreen1: AppCompatActivity(){
         }
 
         signUpButton.setOnClickListener{
-            val intent = Intent(this, SiginUpActivity::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
     }
