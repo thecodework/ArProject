@@ -8,34 +8,37 @@ import android.view.animation.AnimationUtils
 import android.view.animation.AnimationUtils.loadAnimation
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.arproject.LoginActivity
 import com.example.arproject.R
 import com.example.arproject.SignUpActivity
+import com.example.arproject.databinding.ActivityLoginBinding
+import com.example.arproject.databinding.OnboardingScreen1Binding
 
-public class OnBoardingScreen1: AppCompatActivity(){
+ class OnBoardingScreen1: AppCompatActivity(){
+    lateinit var binding: OnboardingScreen1Binding
 
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.onboarding_screen1)
+
+        binding = DataBindingUtil.setContentView(this,R.layout.onboarding_screen1)
 
         val leftAnim = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
         val rightAnim = AnimationUtils.loadAnimation(this, R.anim.slide_out_right)
 
-        val loginButton = findViewById<Button>(R.id.btnLogin)
-        val signUpButton = findViewById<Button>(R.id.btnSignUpOnBoarding1)
 
-        loginButton.startAnimation(leftAnim)
-        signUpButton.startAnimation(rightAnim)
+        binding.btnLogin.startAnimation(leftAnim)
+        binding.btnSignUpOnBoarding1.startAnimation(rightAnim)
 
 
-        loginButton.setOnClickListener{
+        binding.btnLogin.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
 
         }
 
-        signUpButton.setOnClickListener{
+        binding.btnSignUpOnBoarding1.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }

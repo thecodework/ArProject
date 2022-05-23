@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/img"
-    android:orientation="vertical"
-    android:id="@+id/llHomeActivity"
-    tools:context=".SplashScreenActivity">
+<layout>
 
-    <TextView
-        android:id="@+id/tvfurnish"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llHomeActivity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/furnish_ar"
-        android:fontFamily="@font/postnobillscolombo_bold"
-        android:gravity="center"
-        android:layout_marginTop="110dp"
-        android:textColor="@color/Brown"
-        android:textSize="36sp"/>
-    <TextView
-        android:id="@+id/tvInnovation"
-        android:textColor="#000000"
-        android:layout_width="match_parent"
-        android:text="@string/innovation_lab"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:padding="2dp"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:shadowColor="@color/dark_gray"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="1.8" />
-    <TextView
-        android:id="@+id/tvHomeMeets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/home_meets_lifestyle"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center"
-        android:textColor="@color/Brown"
-        android:textSize="16sp"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:orientation="vertical"
+        tools:context=".SplashScreen.SplashScreenActivity">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvfurnish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/postnobillscolombo_bold"
+            android:gravity="center"
+            android:text="@string/furnish_ar"
+            android:textColor="@color/Brown"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvInnovation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="@color/dark_gray"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="1.8"
+            android:text="@string/innovation_lab"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvHomeMeets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/home_meets_lifestyle"
+            android:textColor="@color/Brown"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</layout>

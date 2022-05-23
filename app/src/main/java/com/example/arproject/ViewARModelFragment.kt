@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.databinding.DataBindingUtil
+import com.example.arproject.databinding.ActivityViewArmodelFragmentBinding
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
@@ -14,13 +16,15 @@ import com.google.ar.sceneform.ux.TransformableNode
 
 class ViewARModelFragment : AppCompatActivity() {
 
+    lateinit var binding: ActivityViewArmodelFragmentBinding
+
     private var arFragment: ArFragment? = null
     private var modelRenderable: ModelRenderable? = null
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_armodel_fragment)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_view_armodel_fragment)
         init()
     }
     @RequiresApi(Build.VERSION_CODES.N)
@@ -29,8 +33,6 @@ class ViewARModelFragment : AppCompatActivity() {
         setUpModel()
         setUpPlane()
     }
-
-
 
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setUpModel() {

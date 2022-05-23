@@ -1,77 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/img"
-    android:orientation="vertical"
-    android:id="@+id/llOnboardingScreen1"
-    tools:context=".SplashScreen.OnBoardingScreen1">
-
-    <TextView
-        android:id="@+id/tvfurnish"
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llOnboardingScreen1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/furnish_ar"
-        android:fontFamily="@font/postnobillscolombo_bold"
-        android:gravity="center"
-        android:layout_marginTop="110dp"
-        android:textColor="@color/Brown"
-        android:textSize="36sp"/>
-    <TextView
-        android:id="@+id/tvInnovation"
-        android:textColor="@color/black"
-        android:layout_width="match_parent"
-        android:text="@string/innovation_lab"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:padding="2dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:shadowColor="@color/OffWhite"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="1.8" />
-    <TextView
-        android:id="@+id/tvHomeMeets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/home_meets_lifestyle"
-        android:fontFamily="@font/poppins_light"
-        android:gravity="center"
-        android:textColor="@color/Brown"
-        android:textSize="20sp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/ic_login_button"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="45dp"
-        android:paddingRight="45dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:text="@string/login"
-        android:textSize="20sp"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/white_new"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:orientation="vertical"
+        tools:context=".SplashScreen.OnBoardingScreen1">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSignUpOnBoarding1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:text="@string/signup"
-        android:textSize="20sp"
-        android:background="@drawable/ic_tranperant_button"
-        android:textColor="@color/Brown"/>
+        <TextView
+            android:id="@+id/tvfurnish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/postnobillscolombo_bold"
+            android:gravity="center"
+            android:text="@string/furnish_ar"
+            android:textColor="@color/Brown"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvInnovation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="@color/OffWhite"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="1.8"
+            android:text="@string/innovation_lab"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHomeMeets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/home_meets_lifestyle"
+            android:textColor="@color/Brown"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_login_button"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="45dp"
+            android:paddingTop="5dp"
+            android:paddingRight="45dp"
+            android:paddingBottom="5dp"
+            android:text="@string/login"
+            android:textColor="@color/white_new"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUpOnBoarding1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_tranperant_button"
+            android:paddingLeft="40dp"
+            android:paddingTop="5dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="5dp"
+            android:text="@string/signup"
+            android:textColor="@color/Brown"
+            android:textSize="20sp" />
 
 
-</LinearLayout>
+    </LinearLayout>
+</layout>
