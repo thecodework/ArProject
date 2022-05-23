@@ -20,7 +20,7 @@ class ViewARModelActivity : AppCompatActivity() {
 
     private var arFragment: ArFragment? = null
     private var modelRenewable: ModelRenderable? = null
-    private lateinit var model: String
+
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +31,6 @@ class ViewARModelActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.N)
     private fun init() {
-        model = intent.getStringExtra("model").toString()
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
@@ -44,7 +43,7 @@ class ViewARModelActivity : AppCompatActivity() {
                 this, RenderableSource.builder()
                     .setSource(
                         this,
-                        Uri.parse(model),
+                        Uri.parse("stylised_astronaught.glb"),
                         RenderableSource.SourceType.GLB
                     )
                     .setRecenterMode(RenderableSource.RecenterMode.CENTER)
