@@ -92,7 +92,7 @@
                 android:id="@+id/rvProducts"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/space_16"
+                android:layout_marginHorizontal="@dimen/space_12"
                 android:layout_marginTop="@dimen/space_4"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/space_8"
