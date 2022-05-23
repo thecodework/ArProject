@@ -20,7 +20,7 @@
         android:theme="@style/Theme.ArProject"
         tools:targetApi="31">
         <activity
-            android:name=".ViewARModelFragment"
+            android:name=".ViewARModelActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen.SplashScreenActivity"
