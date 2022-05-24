@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="modelCategory"
+            type="com.example.arproject.model.ModelCategory" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_12"
+            android:elevation="@dimen/space_4"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/space_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_140"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sofa1"
+                    app:imageResource="@{modelCategory.categoryimage}" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/rBar"
+                        style="@android:style/Widget.Material.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:numStars="5"
+                        android:progressTint="@color/yellow"
+                        android:rating="4"
+                        android:stepSize="0.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_12"
+                        android:layout_marginTop="@dimen/space_4"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="200"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Comfy Sofa"
+                    android:textColor="@color/Brown"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Lorem ipsum dolor"
+                    android:textColor="@color/grey"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space_8"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="sit amet"
+                    android:textColor="@color/grey"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space_8"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="750"
+                        android:textColor="@color/black_text"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/greycircle" />
+
+                    <ImageView
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redcircle" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

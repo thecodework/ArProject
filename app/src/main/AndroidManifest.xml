@@ -3,10 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.arproject">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
-    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
 
 
     <application
@@ -20,6 +25,12 @@
         android:theme="@style/Theme.ArProject"
         tools:targetApi="31">
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
             android:name=".ViewARModelActivity"
             android:exported="false" />
         <activity
@@ -31,6 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen.OnBoardingScreen1" />
         <activity android:name=".SplashScreen.OnBoardingScreen2" />
@@ -38,6 +50,8 @@
         <activity android:name=".SignUpActivity" />
     </application>
 
-    <meta-data android:name="com.google.ar.core" android:value="required" />
+    <meta-data
+        android:name="com.google.ar.core"
+        android:value="required" />
 
 </manifest>
