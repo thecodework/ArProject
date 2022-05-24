@@ -18,11 +18,13 @@
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_light.xml" value="0.30364583333333334" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_regular.xml" value="0.30364583333333334" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/font/post_semibold.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_details.xml" value="0.1" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_home.xml" value="0.10960144927536232" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.13297872340425532" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_view_armodel.xml" value="0.152" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_view_armodel_fragment.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.25" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen2.xml" value="0.1" />
@@ -39,7 +41,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.13297872340425532" />
+        <option name="scale" value="0.152" />
       </ProjectState>
     </option>
   </component>
