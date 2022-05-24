@@ -26,28 +26,32 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLoginActivity.setOnClickListener {
             val password = binding.edPassword.getText().toString().trim()
             val email = binding.edEmail.getText().toString().trim()
-            if (isValidEmail(email)) {
-                if (isValidPassword(password)) {
-                    if (password.length > 6) {
-                        val intent = Intent(this, DashboardActivity::class.java)
-                        startActivity(intent)
-                        Toast.makeText(this, "Valid", Toast.LENGTH_SHORT).show()
+            if (password.isEmpty() && email.isEmpty()) {
+                if (isValidEmail(email)) {
+                    if (isValidPassword(password)) {
+                        if (password.length > 6) {
+                            val intent = Intent(this, DashboardActivity::class.java)
+                            startActivity(intent)
+                            Toast.makeText(this, "Valid", Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(
+                                this,
+                                "Password should be greater than 6 digit",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
                     } else {
                         Toast.makeText(
                             this,
-                            "Password should be greater than 6 digit",
+                            "Password should be Strong",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
                 } else {
-                    Toast.makeText(
-                        this,
-                        "Password should be Strong",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this, "Enter valid emailId", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "Enter valid emailid", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Enter valid field", Toast.LENGTH_SHORT).show()
             }
         }
     }
