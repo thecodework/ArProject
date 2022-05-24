@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llLoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvfurnish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/postnobillscolombo_bold"
+            android:gravity="center"
+            android:text="@string/furnish_ar"
+            android:textColor="@color/Brown"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvInnovation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="@color/dark_gray"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="1.8"
+            android:text="@string/innovation_lab"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_with"
+                android:textColor="@color/white_new"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/or"
+                android:textColor="@color/white_new"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgGoogle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/google_icon" />
+
+            <TextView
+                android:id="@+id/tvOr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/or"
+                android:textColor="@color/white_new"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgFacebook"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_facebook" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/white_new"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_round_button"
+            android:hint="@string/enter_email"
+            android:padding="16dp"
+            android:textColorHint="@color/white_new"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_round_button"
+            android:hint="@string/enter_password"
+            android:padding="16dp"
+            android:textColorHint="@color/white_new"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLoginActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_login_button"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="45dp"
+            android:paddingTop="5dp"
+            android:paddingRight="45dp"
+            android:paddingBottom="5dp"
+            android:text="@string/login"
+            android:textColor="@color/white_new"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</layout>

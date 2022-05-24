@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:orientation="vertical"
+        tools:context=".SplashScreen.OnBoardingScreen2">
+
+        <TextView
+            android:id="@+id/tvfurnish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/postnobillscolombo_bold"
+            android:gravity="center"
+            android:text="@string/furnish_ar"
+            android:textColor="@color/Brown"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tvInnovation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="@color/OffWhite"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="1.8"
+            android:text="@string/innovation_lab"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHomeMeets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="@string/home_meets_lifestyle"
+            android:textColor="@color/Brown"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/login"
+            android:textColor="@color/Brown"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_login_button"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="@string/signup"
+            android:textColor="@color/white_new"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</layout>
