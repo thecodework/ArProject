@@ -1,36 +1,24 @@
 package com.example.arproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Slide
-import android.transition.TransitionManager
-import android.view.Gravity
-import android.widget.Button
-import android.widget.LinearLayout
+import androidx.databinding.DataBindingUtil
+import com.example.arproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var btnSlideLeft: Button
-    lateinit var btnSlideRight: Button
-    lateinit var linearLayout: LinearLayout
+
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        btnSlideLeft = findViewById(R.id.btnSlideLeft)
-        btnSlideRight = findViewById(R.id.btnSlideRight)
-        linearLayout = findViewById(R.id.linearLayout)
 
-        btnSlideLeft.setOnClickListener {
-            val slide = Slide()
-            slide.slideEdge = Gravity.START
-            TransitionManager.beginDelayedTransition(linearLayout, slide)
-            //textView.visibility = View.VISIBLE
-        }
-        btnSlideRight.setOnClickListener {
-            val slide = Slide()
-            slide.slideEdge = Gravity.END
-            TransitionManager.beginDelayedTransition(linearLayout, slide)
-            //textView1.visibility = View.VISIBLE
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.btnViewAR.setOnClickListener{
+            val intent = Intent(this, ViewARModelActivity::class.java)
+            startActivity(intent)
+
         }
     }
 }

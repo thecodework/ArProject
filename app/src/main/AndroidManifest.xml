@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.arproject">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +20,10 @@
         android:theme="@style/Theme.ArProject"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ViewARModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +31,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashScreen.OnBoardingScreen1" />
+        <activity android:name=".SplashScreen.OnBoardingScreen2" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
     </application>
+
+    <meta-data android:name="com.google.ar.core" android:value="required" />
 
 </manifest>
