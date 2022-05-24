@@ -17,7 +17,7 @@ class SignUpActivity: AppCompatActivity(){
         binding = DataBindingUtil.setContentView(this,R.layout.activity_signup)
 
         binding.btnCreateAccount.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
 
         }
