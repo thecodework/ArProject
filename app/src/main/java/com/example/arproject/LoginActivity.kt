@@ -24,9 +24,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setListener() {
         binding.btnLoginActivity.setOnClickListener {
-            val password = binding.edPassword.getText().toString().trim()
-            val email = binding.edEmail.getText().toString().trim()
-            if (password.isEmpty() && email.isEmpty()) {
+            val password = binding.edPassword.text.toString().trim()
+            val email = binding.edEmail.text.toString().trim()
+            if (password.isNotEmpty() && email.isNotEmpty()) {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
                         if (password.length > 6) {
@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Enter valid emailId", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "Enter valid field", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Enter field", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -59,5 +59,4 @@ class LoginActivity : AppCompatActivity() {
     private fun initializer() {
 
     }
-
 }
