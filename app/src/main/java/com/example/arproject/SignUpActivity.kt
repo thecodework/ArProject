@@ -24,12 +24,15 @@ class SignUpActivity : AppCompatActivity() {
                         if (password.length > 6) {
                             val intent = Intent(this, DashboardActivity::class.java)
                             startActivity(intent)
-                            Utils.showDialog(this, "Login Successfully")
+                            Utils.showDialog(this, "Register Successfully")
                         } else {
                             Utils.showDialog(this, "Password should be greater than 6 digit")
                         }
                     } else {
-                        Utils.showDialog(this, "Password should be Strong")
+                        Utils.showDialog(
+                            this,
+                            "Password should be contain one capital letter,one symbol & one number"
+                        )
                     }
                 } else {
                     Utils.showDialog(this, "Enter valid emailId")

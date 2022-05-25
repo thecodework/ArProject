@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
                             showDialog(this, "Password should be greater than 6 digit")
                         }
                     } else {
-                        showDialog(this, "Password should be Strong")
+                        showDialog(this, "Password should be contain one capital letter,one symbol & one number")
                     }
                 } else {
                     showDialog(this, "Enter valid emailId")
