@@ -49,7 +49,7 @@
                         android:layout_gravity="center_vertical"
                         android:numStars="5"
                         android:progressTint="@color/yellow"
-                        android:rating="4"
+                        android:rating="@{modelCategory.rating}"
                         android:stepSize="0.5" />
 
                     <TextView
@@ -71,7 +71,7 @@
                     android:layout_marginHorizontal="@dimen/space_8"
                     android:layout_marginTop="@dimen/space_4"
                     android:fontFamily="@font/poppins_light"
-                    android:text="Comfy Sofa"
+                    android:text="@{modelCategory.categoryname}"
                     android:textColor="@color/Brown"
                     android:textSize="14sp" />
 
@@ -81,18 +81,18 @@
                     android:layout_marginHorizontal="@dimen/space_8"
                     android:layout_marginTop="@dimen/space_4"
                     android:fontFamily="@font/poppins_light"
-                    android:text="Lorem ipsum dolor"
+                    android:text="@{modelCategory.details}"
                     android:textColor="@color/grey"
                     android:textSize="10sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/space_8"
-                    android:fontFamily="@font/poppins_light"
-                    android:text="sit amet"
-                    android:textColor="@color/grey"
-                    android:textSize="10sp" />
+                <!-- <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="@dimen/space_8"
+                     android:fontFamily="@font/poppins_light"
+                     android:text="sit amet"
+                     android:textColor="@color/grey"
+                     android:textSize="10sp" />-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="750"
+                        android:text="@{String.valueOf(modelCategory.price)}"
                         android:textColor="@color/black_text"
                         android:textSize="18sp" />
 
