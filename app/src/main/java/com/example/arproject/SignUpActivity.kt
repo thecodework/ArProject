@@ -38,7 +38,7 @@ class SignUpActivity : AppCompatActivity() {
                     Utils.showDialog(this, "Enter valid emailId")
                 }
             } else {
-                Utils.showDialog(this, "Enter Field")
+                Utils.showDialog(this, "Enter valid Email & Password")
             }
         }
     }

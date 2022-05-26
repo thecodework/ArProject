@@ -34,13 +34,16 @@ class LoginActivity : AppCompatActivity() {
                             showDialog(this, "Password should be greater than 6 digit")
                         }
                     } else {
-                        showDialog(this, "Password should be contain one capital letter,one symbol & one number")
+                        showDialog(
+                            this,
+                            "Password should be contain one capital letter,one symbol & one number"
+                        )
                     }
                 } else {
                     showDialog(this, "Enter valid emailId")
                 }
             } else {
-                showDialog(this, "Enter field")
+                showDialog(this, "Enter valid Email & Password")
             }
         }
     }
