@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.example.arproject.DemoData
 import com.example.arproject.adapter.CategoryAdapter
 import com.example.arproject.adapter.ProductAdapter
 import com.example.arproject.databinding.FragmentHomeBinding
@@ -15,12 +16,6 @@ import com.example.arproject.model.ModelCategory
 
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
-    var arraylist: ArrayList<ModelCategory> = ArrayList()
-    var productlist: ArrayList<ModelCategory> = ArrayList()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,19 +35,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun initializer() {
-        arraylist.add(ModelCategory(R.drawable.sofa, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.bed, "Bed"))
-        arraylist.add(ModelCategory(R.drawable.sofa, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.bed, "Bed"))
-        arraylist.add(ModelCategory(R.drawable.sofa, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.bed, "Bed"))
-        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
-        productlist.add(ModelCategory(R.drawable.table, "table"))
-        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
-        productlist.add(ModelCategory(R.drawable.table, "table"))
-        productlist.add(ModelCategory(R.drawable.yellowsofa, "Sofa"))
-        productlist.add(ModelCategory(R.drawable.table, "table"))
-        binding.rvCategory.adapter = CategoryAdapter(arraylist)
-        binding.rvProducts.adapter = ProductAdapter(productlist)
+        binding.rvCategory.adapter = CategoryAdapter(DemoData.getProductList())
+        binding.rvProducts.adapter = ProductAdapter(DemoData.getProductList())
     }
 }

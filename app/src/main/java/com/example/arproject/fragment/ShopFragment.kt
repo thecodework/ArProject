@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.DemoData
 import com.example.arproject.DetailsActivity
 import com.example.arproject.R
 import com.example.arproject.adapter.ShopAdapter
@@ -16,11 +17,7 @@ import com.example.arproject.model.ModelCategory
 
 class ShopFragment : Fragment(), ShopAdapter.ItemClick {
     lateinit var binding: FragmentShopBinding
-    var arraylist: ArrayList<ModelCategory> = ArrayList()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    var demoProductList: ArrayList<ModelCategory> = DemoData.getProductList()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,18 +32,12 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
     }
 
     private fun initializer() {
-        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.sofa1, "Sofa"))
-        arraylist.add(ModelCategory(R.drawable.sofa2, "Sofa"))
-        binding.rvShop.adapter = ShopAdapter(arraylist, this)
+        binding.rvShop.adapter = ShopAdapter(demoProductList, this)
     }
 
     override fun onClick(position: Int) {
         val intent = Intent(context, DetailsActivity::class.java)
-        val pic: Int = arraylist[position].categoryimage
+        val pic: Int = demoProductList[position].categoryimage
         intent.putExtra("image", pic)
         startActivity(intent)
     }
