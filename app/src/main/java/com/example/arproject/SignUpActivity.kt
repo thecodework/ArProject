@@ -2,8 +2,10 @@ package com.example.arproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.adapters.ViewGroupBindingAdapter.setListener
 import com.example.arproject.databinding.ActivitySignupBinding
 
 class SignUpActivity : AppCompatActivity() {
@@ -11,9 +13,16 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_signup)
+        initializer()
+        setListener()
+    }
 
+    private fun initializer() {
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+    }
+
+    private fun setListener() {
         binding.btnCreateAccount.setOnClickListener {
             val password = binding.edPassword.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()

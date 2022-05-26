@@ -2,6 +2,7 @@ package com.example.arproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.Utils.Companion.isValidEmail
@@ -49,6 +50,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }
 }
