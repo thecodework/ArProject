@@ -48,10 +48,7 @@
         <activity android:name=".SplashScreen.OnBoardingScreen2" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
+        <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
-
-    <meta-data
-        android:name="com.google.ar.core"
-        android:value="required" />
 
 </manifest>
