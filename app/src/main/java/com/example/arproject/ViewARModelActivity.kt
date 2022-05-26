@@ -85,7 +85,7 @@ class ViewARModelActivity : AppCompatActivity() {
                 this, RenderableSource.builder()
                     .setSource(
                         this,
-                        Uri.parse("stylised_astronaught.glb"),
+                        Uri.parse("bluechair.glb"),
                         RenderableSource.SourceType.GLB
                     )
                     .setRecenterMode(RenderableSource.RecenterMode.CENTER)
