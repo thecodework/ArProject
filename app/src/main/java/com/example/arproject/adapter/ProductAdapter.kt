@@ -9,10 +9,14 @@ import com.example.arproject.databinding.RowProductBinding
 import com.example.arproject.model.ModelCategory
 
 class ProductAdapter(
-    private val arraylist: ArrayList<ModelCategory>
+    private val arraylist: ArrayList<ModelCategory>,
+    private val item: ProductAdapter.ItemClick
 ) :
     RecyclerView.Adapter<ProductAdapter.MyHolder>() {
 
+    interface ItemClick {
+        fun onClick(position: Int)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -23,8 +27,14 @@ class ProductAdapter(
         return MyHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MyHolder, position: Int) =
-        holder.bind(arraylist[position])
+    override fun onBindViewHolder(holder: MyHolder, position: Int) {
+        with(holder) {
+            holder.bind(arraylist[position])
+            binding.imageItem.setOnClickListener {
+                item.onClick(position)
+            }
+        }
+    }
 
     override fun getItemCount(): Int {
         return arraylist.size
