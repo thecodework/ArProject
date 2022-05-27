@@ -1,6 +1,5 @@
-package com.example.arproject
+package com.example.arproject.utils
 
-import android.R.attr
 import android.app.Activity
 import android.app.Dialog
 import android.text.TextUtils
@@ -10,9 +9,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
+import com.example.arproject.R
 
 class Utils {
 

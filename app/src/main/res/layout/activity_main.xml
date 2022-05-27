@@ -20,22 +20,5 @@
             android:text="WelCome to MainActivity"
             android:textColor="@color/Brown"
             android:textSize="36sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnViewAR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/ic_login_button"
-            android:fontFamily="@font/poppins_medium"
-            android:paddingLeft="45dp"
-            android:paddingTop="5dp"
-            android:paddingRight="45dp"
-            android:paddingBottom="5dp"
-            android:text="View in AR"
-            android:textColor="@color/white_new"
-            android:textSize="20sp" />
-
     </LinearLayout>
 </layout>
