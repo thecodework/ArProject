@@ -23,7 +23,6 @@ import com.example.arproject.databinding.OnboardingScreen1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.onboarding_screen1)
-
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         val leftAnim = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
         val rightAnim = AnimationUtils.loadAnimation(this, R.anim.slide_out_right)
