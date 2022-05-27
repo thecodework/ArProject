@@ -2,19 +2,36 @@ package com.example.arproject
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivitySignupBinding
+import com.example.arproject.utils.ProgressDialog
+import com.example.arproject.utils.Utils
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var binding: ActivitySignupBinding
+    private var pDialog: ProgressDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_signup)
+        setListener()
+    }
+    fun showProgressDialog() {
+        if (pDialog == null){
+            pDialog = ProgressDialog(this)
+        }
+        pDialog!!.showProgressDialog()
+    }
 
+    fun hideProgressDialog() {
+        if (pDialog != null)
+            pDialog!!.hideProgressDialog()
+    }
+    private fun setListener() {
         binding.btnCreateAccount.setOnClickListener {
+            showProgressDialog()
             val password = binding.edPassword.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()
             val name = binding.edName.text.toString().trim()
@@ -22,9 +39,15 @@ class SignUpActivity : AppCompatActivity() {
                 if (Utils.isValidEmail(email)) {
                     if (Utils.isValidPassword(password)) {
                         if (password.length > 6) {
-                            val intent = Intent(this, DashboardActivity::class.java)
-                            startActivity(intent)
-                            Utils.showDialog(this, "Register Successfully")
+                            Handler().postDelayed({
+                                val intent = Intent(this, DashboardActivity::class.java)
+                                hideProgressDialog()
+                                startActivity(intent)
+                            }, 3000) // 3000 is the delayed time in milliseconds.
+                            
+//                            val intent = Intent(this, DashboardActivity::class.java)
+//                            startActivity(intent)
+//                            Utils.showDialog(this, "Register Successfully")
                         } else {
                             Utils.showDialog(this, "Password should be greater than 6 digit")
                         }

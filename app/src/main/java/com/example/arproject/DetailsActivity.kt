@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityDetailsBinding
+import com.example.arproject.utils.Utils
 
 
 class DetailsActivity : AppCompatActivity() {
