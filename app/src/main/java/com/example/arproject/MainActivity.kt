@@ -12,13 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
-        binding.btnViewAR.setOnClickListener{
-            val intent = Intent(this, ViewARModelActivity::class.java)
-            startActivity(intent)
-
-        }
     }
 }
