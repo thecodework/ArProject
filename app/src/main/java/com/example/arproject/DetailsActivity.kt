@@ -1,5 +1,6 @@
 package com.example.arproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -18,9 +19,11 @@ class DetailsActivity : AppCompatActivity() {
 
     private fun setListener() {
         binding.btnAR.setOnClickListener {
+                val intent = Intent(this, ViewARModelActivity::class.java)
+                startActivity(intent)
+            }
         }
-    }
-
+    
     private fun initializer() {
         Utils.changeStatusBar(this, R.color.white_new)
         val pic: Int = intent.getIntExtra("image", 0)
