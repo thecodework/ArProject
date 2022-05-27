@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -48,15 +49,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/continue_with"
-                android:textColor="@color/white_new"
-                android:textSize="26sp" />
-
-            <TextView
-                android:id="@+id/tvOr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="@string/or"
                 android:textColor="@color/white_new"
                 android:textSize="26sp" />
 
@@ -113,6 +105,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/ic_round_button"
             android:hint="@string/enter_password"
+            android:inputType="textPassword"
             android:padding="16dp"
             android:textColorHint="@color/white_new"
             android:textSize="22sp" />
@@ -130,6 +123,7 @@
             android:paddingRight="45dp"
             android:paddingBottom="5dp"
             android:text="@string/login"
+            android:textAllCaps="false"
             android:textColor="@color/white_new"
             android:textSize="16sp" />
 

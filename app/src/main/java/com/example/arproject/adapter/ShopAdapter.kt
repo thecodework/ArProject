@@ -28,14 +28,12 @@ class ShopAdapter(
     }
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
-
         with(holder) {
             holder.bind(arraylist[position])
             binding.imageItem.setOnClickListener {
                 item.onClick(position)
             }
         }
-
     }
 
     override fun getItemCount(): Int {

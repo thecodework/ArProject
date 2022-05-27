@@ -26,10 +26,10 @@
             android:id="@+id/tvInnovation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_light"
+            android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
             android:padding="2dp"
-            android:shadowColor="@color/OffWhite"
+            android:shadowColor="@color/dark_gray"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="1.8"
@@ -68,6 +68,7 @@
             android:paddingLeft="45dp"
             android:paddingRight="45dp"
             android:text="@string/signup"
+            android:textAllCaps="false"
             android:textColor="@color/white_new"
             android:textSize="20sp" />
 
