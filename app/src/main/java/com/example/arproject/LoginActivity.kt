@@ -48,11 +48,6 @@ class LoginActivity : AppCompatActivity() {
                                 hideProgressDialog()
                                 startActivity(intent)
                             }, 3000) // 3000 is the delayed time in milliseconds.
-
-//                            val intent = Intent(this, DashboardActivity::class.java)
-//                            startActivity(intent)
-//                            showDialog(this, "Login Successfully")
-
                         } else {
                             showDialog(this, "Password should be greater than 6 digit")
                             hideProgressDialog()

@@ -44,10 +44,6 @@ class SignUpActivity : AppCompatActivity() {
                                 hideProgressDialog()
                                 startActivity(intent)
                             }, 3000) // 3000 is the delayed time in milliseconds.
-                            
-//                            val intent = Intent(this, DashboardActivity::class.java)
-//                            startActivity(intent)
-//                            Utils.showDialog(this, "Register Successfully")
                         } else {
                             Utils.showDialog(this, "Password should be greater than 6 digit")
                             hideProgressDialog()
