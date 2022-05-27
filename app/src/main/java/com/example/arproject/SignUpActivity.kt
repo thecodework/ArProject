@@ -3,6 +3,7 @@ package com.example.arproject
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivitySignupBinding
@@ -16,7 +17,12 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_signup)
+        initializer()
         setListener()
+    }
+
+    private fun initializer() {
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }
     fun showProgressDialog() {
         if (pDialog == null){
@@ -29,6 +35,7 @@ class SignUpActivity : AppCompatActivity() {
         if (pDialog != null)
             pDialog!!.hideProgressDialog()
     }
+
     private fun setListener() {
         binding.btnCreateAccount.setOnClickListener {
             showProgressDialog()

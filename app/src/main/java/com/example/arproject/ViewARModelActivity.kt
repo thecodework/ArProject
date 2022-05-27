@@ -6,6 +6,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
@@ -17,6 +18,7 @@ import com.google.ar.sceneform.assets.RenderableSource
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
+
 @RequiresApi(Build.VERSION_CODES.N)
 class ViewARModelActivity : AppCompatActivity() {
 
@@ -30,6 +32,7 @@ class ViewARModelActivity : AppCompatActivity() {
         init()
         isARCoreSupportedAndUpToDate()
     }
+
     fun isARCoreSupportedAndUpToDate(): Boolean {
         return when (ArCoreApk.getInstance().checkAvailability(this)) {
             ArCoreApk.Availability.SUPPORTED_INSTALLED -> {
@@ -74,6 +77,7 @@ class ViewARModelActivity : AppCompatActivity() {
     }
 
     private fun init() {
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
@@ -96,7 +100,11 @@ class ViewARModelActivity : AppCompatActivity() {
                 modelRenewable = renewable
             }
             .exceptionally {
-                Toast.makeText(this@ViewARModelActivity, "Model can't be Loaded", Toast.LENGTH_SHORT)
+                Toast.makeText(
+                    this@ViewARModelActivity,
+                    "Model can't be Loaded",
+                    Toast.LENGTH_SHORT
+                )
                     .show()
                 null
             }

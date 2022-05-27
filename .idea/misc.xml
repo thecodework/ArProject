@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/buttonback.xml" value="0.1095" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/heartback.xml" value="0.1095" />
-        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/ic_login_button.xml" value="0.1125" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/item_selector.xml" value="0.1095" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/linearback.xml" value="0.1095" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/drawable/whitegreyback.xml" value="0.1095" />
@@ -21,21 +20,38 @@
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/font/post_semibold.xml" value="0.20277777777777778" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_details.xml" value="0.25" />
+<<<<<<< HEAD
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_login.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.16574074074074074" />
+=======
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.16018518518518518" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_view_armodel.xml" value="0.20416666666666666" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/dailogbox.xml" value="0.203125" />
+>>>>>>> main
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/fragment_shop.xml" value="0.2" />
+<<<<<<< HEAD
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.20416666666666666" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/onboarding_screen2.xml" value="0.20416666666666666" />
+=======
+>>>>>>> main
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/row_category.xml" value="0.19895833333333332" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/row_product.xml" value="0.2" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/row_shop.xml" value="0.25" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/search.xml" value="0.25" />
         <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/menu/bottonmenu.xml" value="0.2" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.13297872340425532" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/activity_view_armodel_fragment.xml" value="0.13072916666666667" />
+=======
+>>>>>>> main
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.25" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/layout/progress_dialog.xml" value="0.11354166666666667" />
       </map>
@@ -47,4 +63,14 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
+<<<<<<< HEAD
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.13297872340425532" />
+      </ProjectState>
+    </option>
+  </component>
+=======
+>>>>>>> main
 </project>

@@ -3,6 +3,7 @@ package com.example.arproject.SplashScreen
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.AnimationUtils.loadAnimation
@@ -21,9 +22,8 @@ import com.example.arproject.databinding.OnboardingScreen1Binding
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this,R.layout.onboarding_screen1)
-
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         val leftAnim = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
         val rightAnim = AnimationUtils.loadAnimation(this, R.anim.slide_out_right)
 
