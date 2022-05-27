@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.arproject.SplashScreen.OnBoardingScreen1
 import com.example.arproject.utils.Utils.Companion.isValidEmail
 import com.example.arproject.utils.Utils.Companion.isValidPassword
 import com.example.arproject.utils.Utils.Companion.showDialog
@@ -29,8 +28,7 @@ class LoginActivity : AppCompatActivity() {
         }
         pDialog!!.showProgressDialog()
     }
-
-     fun hideProgressDialog() {
+    fun hideProgressDialog() {
         if (pDialog != null)
             pDialog!!.hideProgressDialog()
     }
@@ -57,18 +55,21 @@ class LoginActivity : AppCompatActivity() {
 
                         } else {
                             showDialog(this, "Password should be greater than 6 digit")
+                            hideProgressDialog()
                         }
                     } else {
                         showDialog(
                             this,
-                            "Password should be contain one capital letter,one symbol & one number"
-                        )
+                            "Password should be contain one capital letter,one symbol & one number")
+                        hideProgressDialog()
                     }
                 } else {
                     showDialog(this, "Enter valid emailId")
+                    hideProgressDialog()
                 }
             } else {
                 showDialog(this, "Enter valid Email & Password")
+                hideProgressDialog()
             }
         }
     }

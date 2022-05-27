@@ -15,6 +15,7 @@ class ProgressDialog: Dialog {
     }
     constructor(context: Context, theme: Int) : super(context, theme)
 
+
     fun showProgressDialog(){
         try {
             if (pDialog == null){
@@ -26,6 +27,7 @@ class ProgressDialog: Dialog {
             e.printStackTrace()
         }
     }
+
     fun hideProgressDialog(){
         try {
             if (pDialog != null){
@@ -37,6 +39,7 @@ class ProgressDialog: Dialog {
             e.printStackTrace()
         }
     }
+
     @SuppressLint("InflateParams")
     private fun inflateProgressDialog(): ProgressDialog {
         val inflator = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -45,7 +48,9 @@ class ProgressDialog: Dialog {
         (pDialog as ProgressDialog).setContentView(view)
         return pDialog as ProgressDialog
     }
+
     companion object {
         private var pDialog: Dialog? = null
     }
+
 }

@@ -50,18 +50,21 @@ class SignUpActivity : AppCompatActivity() {
 //                            Utils.showDialog(this, "Register Successfully")
                         } else {
                             Utils.showDialog(this, "Password should be greater than 6 digit")
+                            hideProgressDialog()
                         }
                     } else {
                         Utils.showDialog(
                             this,
-                            "Password should be contain one capital letter,one symbol & one number"
-                        )
+                            "Password should be contain one capital letter,one symbol & one number")
+                        hideProgressDialog()
                     }
                 } else {
                     Utils.showDialog(this, "Enter valid emailId")
+                    hideProgressDialog()
                 }
             } else {
                 Utils.showDialog(this, "Enter valid Email & Password")
+                hideProgressDialog()
             }
         }
     }
