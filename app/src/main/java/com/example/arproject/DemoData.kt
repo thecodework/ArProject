@@ -36,7 +36,7 @@ class DemoData {
 
         private fun getProductName(name: Int): String {
             val productName =
-                mapOf(1 to "Sofa", 2 to "Bed", 3 to "Table", 4 to "Sofa", 5 to "Sofa")
+                mapOf(1 to "Sofa", 2 to "Sofa", 3 to "Table", 4 to "Sofa", 5 to "Sofa")
             return productName.getValue(name)
         }
 
