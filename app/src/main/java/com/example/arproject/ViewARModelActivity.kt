@@ -30,7 +30,7 @@ class ViewARModelActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_view_armodel)
         init()
-        isARCoreSupportedAndUpToDate()
+        //isARCoreSupportedAndUpToDate()
     }
 
     fun isARCoreSupportedAndUpToDate(): Boolean {
@@ -39,7 +39,7 @@ class ViewARModelActivity : AppCompatActivity() {
                 Log.d(TAG, "SUPPORTED_INSTALLED")
                 true
             }
-            ArCoreApk.Availability.SUPPORTED_APK_TOO_OLD, ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED -> {
+            ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED -> {
                 try {
                     // Request ARCore installation or update if needed.
                     when (ArCoreApk.getInstance().requestInstall(this, true)) {
@@ -71,6 +71,10 @@ class ViewARModelActivity : AppCompatActivity() {
             }
             ArCoreApk.Availability.UNKNOWN_TIMED_OUT -> {
                 Log.d(TAG, "UNKNOWN_TIMED_OUT")
+                false
+            }
+            ArCoreApk.Availability.SUPPORTED_APK_TOO_OLD -> {
+                Log.d(TAG, "SUPPORTED_APK_TOO_OLD")
                 false
             }
         }
