@@ -24,8 +24,9 @@ class SignUpActivity : AppCompatActivity() {
     private fun initializer() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }
+
     fun showProgressDialog() {
-        if (pDialog == null){
+        if (pDialog == null) {
             pDialog = ProgressDialog(this)
         }
         pDialog!!.showProgressDialog()
@@ -58,7 +59,8 @@ class SignUpActivity : AppCompatActivity() {
                     } else {
                         Utils.showDialog(
                             this,
-                            "Password should be contain one capital letter,one symbol & one number")
+                            "Password should be in Alphanumeric pattern"
+                        )
                         hideProgressDialog()
                     }
                 } else {

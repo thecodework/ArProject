@@ -23,12 +23,14 @@ class LoginActivity : AppCompatActivity() {
         initializer()
         setListener()
     }
-     fun showProgressDialog() {
-        if (pDialog == null){
+
+    fun showProgressDialog() {
+        if (pDialog == null) {
             pDialog = ProgressDialog(this)
         }
         pDialog!!.showProgressDialog()
     }
+
     fun hideProgressDialog() {
         if (pDialog != null)
             pDialog!!.hideProgressDialog()
@@ -56,7 +58,8 @@ class LoginActivity : AppCompatActivity() {
                     } else {
                         showDialog(
                             this,
-                            "Password should be contain one capital letter,one symbol & one number")
+                            "Password should be in Alphanumeric pattern"
+                        )
                         hideProgressDialog()
                     }
                 } else {
