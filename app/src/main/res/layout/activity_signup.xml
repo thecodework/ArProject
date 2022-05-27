@@ -69,6 +69,7 @@
             android:layout_marginRight="20dp"
             android:background="@color/Light_Brown"
             android:hint="@string/enter_password"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColorHint="@color/white_new"
             android:textSize="22sp" />
@@ -83,6 +84,7 @@
             android:fontFamily="@font/poppins_medium"
             android:paddingLeft="45dp"
             android:paddingTop="5dp"
+            android:textAllCaps="false"
             android:paddingRight="45dp"
             android:paddingBottom="5dp"
             android:text="@string/create_account"

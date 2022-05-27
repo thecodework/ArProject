@@ -59,6 +59,7 @@
             android:paddingRight="45dp"
             android:paddingBottom="5dp"
             android:text="@string/login"
+            android:textAllCaps="false"
             android:textColor="@color/white_new"
             android:textSize="20sp" />
 
@@ -74,6 +75,7 @@
             android:paddingRight="40dp"
             android:paddingBottom="5dp"
             android:text="@string/signup"
+            android:textAllCaps="false"
             android:textColor="@color/Brown"
             android:textSize="20sp" />
 

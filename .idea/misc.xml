@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_details.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_login.xml" value="0.152" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_main.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_signup.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/activity_view_armodel.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/onboarding_screen1.xml" value="0.16574074074074074" />
+        <entry key="..\:/TheCodeWork/TCWProjects/ArProject/app/src/main/res/layout/onboarding_screen2.xml" value="0.16574074074074074" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/drawable/ic_login_button.xml" value="0.135" />
         <entry key="..\:/Users/amrut/AndroidStudioProjects/ArProject/app/src/main/res/drawable/ic_round_google_icon.xml" value="0.2115" />
