@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
             if (password.isNotEmpty() && email.isNotEmpty()) {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
-                        if (password.length > 6) {
+                        if (password.length > 8) {
 
                             Handler().postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                                 startActivity(intent)
                             }, 3000) // 3000 is the delayed time in milliseconds.
                         } else {
-                            showDialog(this, "Password should be greater than 6 digit")
+                            showDialog(this, "Password should be greater than 8 digit")
                             hideProgressDialog()
                         }
                     } else {
