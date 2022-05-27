@@ -12,7 +12,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardImage"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/space_400"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/space_12"
             android:layout_marginTop="@dimen/space_16"
             android:elevation="@dimen/space_4"
@@ -24,13 +24,13 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/imageItem"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
                     android:src="@drawable/blacksofa" />
 
                 <LinearLayout
@@ -205,7 +205,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/space_16"
-            android:layout_marginTop="@dimen/space_4"
+            android:layout_marginTop="@dimen/space_12"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
