@@ -23,8 +23,7 @@ class DetailsActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.imageBack.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 
