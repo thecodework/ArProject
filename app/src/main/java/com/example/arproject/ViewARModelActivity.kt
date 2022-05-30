@@ -85,8 +85,13 @@ class ViewARModelActivity : AppCompatActivity() {
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
+        setOnClickListener()
     }
-
+    private fun setOnClickListener(){
+        binding.btnArrowBack.setOnClickListener {
+            finish()
+        }
+    }
     private fun setUpModel() {
         ModelRenderable.builder()
             .setSource(

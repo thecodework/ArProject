@@ -15,12 +15,12 @@
             android:id="@+id/tvfurnish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="@dimen/space_110"
             android:fontFamily="@font/postnobillscolombo_bold"
             android:gravity="center"
             android:text="@string/furnish_ar"
             android:textColor="@color/Brown"
-            android:textSize="36sp" />
+            android:textSize="@dimen/text_36" />
 
         <TextView
             android:id="@+id/tvInnovation"
@@ -28,14 +28,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:padding="2dp"
+            android:padding="@dimen/space_2"
             android:shadowColor="@color/dark_gray"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="1.8"
             android:text="@string/innovation_lab"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="@dimen/text_16" />
 
         <TextView
             android:id="@+id/tvHomeMeets"
@@ -45,7 +45,7 @@
             android:gravity="center"
             android:text="@string/home_meets_lifestyle"
             android:textColor="@color/Brown"
-            android:textSize="16sp" />
+            android:textSize="@dimen/text_18" />
 
     </LinearLayout>
 </layout>
