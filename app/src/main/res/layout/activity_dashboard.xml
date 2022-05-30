@@ -32,6 +32,7 @@
             app:itemIconTint="@drawable/item_selector"
             app:itemTextColor="@drawable/item_selector"
             app:labelVisibilityMode="labeled"
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
