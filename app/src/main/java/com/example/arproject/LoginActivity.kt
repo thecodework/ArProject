@@ -26,6 +26,22 @@ class LoginActivity : AppCompatActivity() {
     }
     
     private fun setListener() {
+        binding.imgGoogle.setOnClickListener{
+            pDialog!!.showProgressDialog()
+            Handler().postDelayed({
+                val intent = Intent(this, DashboardActivity::class.java)
+                pDialog!!.hideProgressDialog()
+                startActivity(intent)
+            }, 1000) // 3000 is the delayed time in milliseconds.
+        }
+        binding.imgFacebook.setOnClickListener{
+            pDialog!!.showProgressDialog()
+            Handler().postDelayed({
+                val intent = Intent(this, DashboardActivity::class.java)
+                pDialog!!.hideProgressDialog()
+                startActivity(intent)
+            }, 1000) // 3000 is the delayed time in milliseconds.
+        }
         binding.btnLoginActivity.setOnClickListener {
             pDialog!!.showProgressDialog()
             val password = binding.edPassword.text.toString().trim()
