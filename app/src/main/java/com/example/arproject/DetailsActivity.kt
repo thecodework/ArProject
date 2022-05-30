@@ -19,11 +19,15 @@ class DetailsActivity : AppCompatActivity() {
 
     private fun setListener() {
         binding.btnAR.setOnClickListener {
-                val intent = Intent(this, ViewARModelActivity::class.java)
-                startActivity(intent)
-            }
+            val intent = Intent(this, ViewARModelActivity::class.java)
+            startActivity(intent)
         }
-    
+        binding.imageBack.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
     private fun initializer() {
         Utils.changeStatusBar(this, R.color.white_new)
         val pic: Int = intent.getIntExtra("image", 0)
