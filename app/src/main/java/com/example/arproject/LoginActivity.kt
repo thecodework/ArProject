@@ -22,21 +22,28 @@ class LoginActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         initializer()
         setListener()
+        pDialog = ProgressDialog(this)
     }
-     fun showProgressDialog() {
-        if (pDialog == null){
-            pDialog = ProgressDialog(this)
-        }
-        pDialog!!.showProgressDialog()
-    }
-    fun hideProgressDialog() {
-        if (pDialog != null)
-            pDialog!!.hideProgressDialog()
-    }
-
+    
     private fun setListener() {
+        binding.imgGoogle.setOnClickListener{
+            pDialog!!.showProgressDialog()
+            Handler().postDelayed({
+                val intent = Intent(this, DashboardActivity::class.java)
+                pDialog!!.hideProgressDialog()
+                startActivity(intent)
+            }, 1000) // 3000 is the delayed time in milliseconds.
+        }
+        binding.imgFacebook.setOnClickListener{
+            pDialog!!.showProgressDialog()
+            Handler().postDelayed({
+                val intent = Intent(this, DashboardActivity::class.java)
+                pDialog!!.hideProgressDialog()
+                startActivity(intent)
+            }, 1000) // 3000 is the delayed time in milliseconds.
+        }
         binding.btnLoginActivity.setOnClickListener {
-            showProgressDialog()
+            pDialog!!.showProgressDialog()
             val password = binding.edPassword.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()
             if (password.isNotEmpty() && email.isNotEmpty()) {
@@ -46,26 +53,26 @@ class LoginActivity : AppCompatActivity() {
 
                             Handler().postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
-                                hideProgressDialog()
+                                pDialog!!.hideProgressDialog()
                                 startActivity(intent)
                             }, 3000) // 3000 is the delayed time in milliseconds.
                         } else {
                             showDialog(this, "Password should be greater than 6 digit")
-                            hideProgressDialog()
+                            pDialog!!.hideProgressDialog()
                         }
                     } else {
                         showDialog(
                             this,
                             "Password should be contain one capital letter,one symbol & one number")
-                        hideProgressDialog()
+                        pDialog!!.hideProgressDialog()
                     }
                 } else {
                     showDialog(this, "Enter valid emailId")
-                    hideProgressDialog()
+                    pDialog!!.hideProgressDialog()
                 }
             } else {
                 showDialog(this, "Enter valid Email & Password")
-                hideProgressDialog()
+                pDialog!!.hideProgressDialog()
             }
         }
     }

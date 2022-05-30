@@ -19,26 +19,16 @@ class SignUpActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_signup)
         initializer()
         setListener()
+        pDialog = ProgressDialog(this)
     }
 
     private fun initializer() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }
-    fun showProgressDialog() {
-        if (pDialog == null){
-            pDialog = ProgressDialog(this)
-        }
-        pDialog!!.showProgressDialog()
-    }
-
-    fun hideProgressDialog() {
-        if (pDialog != null)
-            pDialog!!.hideProgressDialog()
-    }
 
     private fun setListener() {
         binding.btnCreateAccount.setOnClickListener {
-            showProgressDialog()
+            pDialog!!.showProgressDialog()
             val password = binding.edPassword.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()
             val name = binding.edName.text.toString().trim()
@@ -48,26 +38,26 @@ class SignUpActivity : AppCompatActivity() {
                         if (password.length > 6) {
                             Handler().postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
-                                hideProgressDialog()
+                               pDialog!!.hideProgressDialog()
                                 startActivity(intent)
                             }, 3000) // 3000 is the delayed time in milliseconds.
                         } else {
                             Utils.showDialog(this, "Password should be greater than 6 digit")
-                            hideProgressDialog()
+                            pDialog!!.hideProgressDialog()
                         }
                     } else {
                         Utils.showDialog(
                             this,
                             "Password should be contain one capital letter,one symbol & one number")
-                        hideProgressDialog()
+                        pDialog!!.hideProgressDialog()
                     }
                 } else {
                     Utils.showDialog(this, "Enter valid emailId")
-                    hideProgressDialog()
+                    pDialog!!.hideProgressDialog()
                 }
             } else {
                 Utils.showDialog(this, "Enter valid Email & Password")
-                hideProgressDialog()
+                pDialog!!.hideProgressDialog()
             }
         }
     }
