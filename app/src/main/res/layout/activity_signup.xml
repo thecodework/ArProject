@@ -15,12 +15,12 @@
             android:id="@+id/tvfurnish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="@dimen/space_110"
             android:fontFamily="@font/postnobillscolombo_bold"
             android:gravity="center"
             android:text="@string/furnish_ar"
             android:textColor="@color/Brown"
-            android:textSize="36sp" />
+            android:textSize="@dimen/text_36" />
 
         <TextView
             android:id="@+id/tvInnovation"
@@ -28,68 +28,68 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:padding="2dp"
+            android:padding="@dimen/space_2"
             android:shadowColor="@color/dark_gray"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="1.8"
             android:text="@string/innovation_lab"
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_18" />
 
         <EditText
             android:id="@+id/edName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_20"
             android:background="@drawable/ic_round_button"
             android:hint="@string/enter_your_name"
-            android:padding="10dp"
+            android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="22sp" />
+            android:textSize="@dimen/text_22" />
 
         <EditText
             android:id="@+id/edEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/space_20"
             android:background="@color/Light_Brown"
             android:hint="@string/enter_email"
-            android:padding="10dp"
+            android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="22sp" />
+            android:textSize="@dimen/text_22" />
 
         <EditText
             android:id="@+id/edPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
             android:background="@color/Light_Brown"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
-            android:padding="10dp"
+            android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="22sp" />
+            android:textSize="@dimen/text_22" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCreateAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/space_30"
             android:background="@color/Brown"
             android:fontFamily="@font/poppins_medium"
-            android:paddingLeft="45dp"
-            android:paddingTop="5dp"
-            android:paddingRight="45dp"
-            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/space_45"
+            android:paddingTop="@dimen/space_5"
+            android:paddingRight="@dimen/space_45"
+            android:paddingBottom="@dimen/space_5"
             android:text="@string/create_account"
             android:textAllCaps="false"
             android:textColor="@color/white_new"
-            android:textSize="16sp" />
+            android:textSize="@dimen/text_16" />
 
     </LinearLayout>
 </layout>

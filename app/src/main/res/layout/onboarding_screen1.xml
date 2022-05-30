@@ -15,12 +15,12 @@
             android:id="@+id/tvfurnish"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="@dimen/space_110"
             android:fontFamily="@font/postnobillscolombo_bold"
             android:gravity="center"
             android:text="@string/furnish_ar"
             android:textColor="@color/Brown"
-            android:textSize="36sp" />
+            android:textSize="@dimen/text_36" />
 
         <TextView
             android:id="@+id/tvInnovation"
@@ -28,14 +28,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:padding="2dp"
+            android:padding="@dimen/space_2"
             android:shadowColor="@color/dark_gray"
             android:shadowDx="8"
             android:shadowDy="8"
             android:shadowRadius="1.8"
             android:text="@string/innovation_lab"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_18" />
 
         <TextView
             android:id="@+id/tvHomeMeets"
@@ -45,39 +45,39 @@
             android:gravity="center"
             android:text="@string/home_meets_lifestyle"
             android:textColor="@color/Brown"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_20" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/space_30"
             android:background="@drawable/ic_login_button"
             android:fontFamily="@font/poppins_medium"
-            android:paddingLeft="45dp"
-            android:paddingTop="5dp"
-            android:paddingRight="45dp"
-            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/space_45"
+            android:paddingTop="@dimen/space_5"
+            android:paddingRight="@dimen/space_45"
+            android:paddingBottom="@dimen/space_5"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/white_new"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_20" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUpOnBoarding1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/space_10"
             android:background="@drawable/ic_tranperant_button"
-            android:paddingLeft="40dp"
-            android:paddingTop="5dp"
-            android:paddingRight="40dp"
-            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/space_40"
+            android:paddingTop="@dimen/space_5"
+            android:paddingRight="@dimen/space_40"
+            android:paddingBottom="@dimen/space_5"
             android:text="@string/signup"
             android:textAllCaps="false"
             android:textColor="@color/Brown"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_20" />
     </LinearLayout>
 </layout>
