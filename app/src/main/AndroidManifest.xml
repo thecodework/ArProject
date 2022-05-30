@@ -43,7 +43,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen.OnBoardingScreen1" />
         <activity android:name=".SplashScreen.OnBoardingScreen2" />
         <activity android:name=".LoginActivity" />
