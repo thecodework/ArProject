@@ -15,11 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:id="@+id/btnArrow_back"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
             android:src="@drawable/back_arrow"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_20"
             android:layout_alignParentLeft="true"
             />
 

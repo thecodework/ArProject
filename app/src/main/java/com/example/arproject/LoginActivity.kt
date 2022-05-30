@@ -24,7 +24,6 @@ class LoginActivity : AppCompatActivity() {
         setListener()
         pDialog = ProgressDialog(this)
     }
-    
     private fun setListener() {
         binding.imgGoogle.setOnClickListener{
             pDialog!!.showProgressDialog()
@@ -49,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
             if (password.isNotEmpty() && email.isNotEmpty()) {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
-                        if (password.length > 6) {
+                        if (password.length > 8) {
 
                             Handler().postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
@@ -61,9 +60,7 @@ class LoginActivity : AppCompatActivity() {
                             pDialog!!.hideProgressDialog()
                         }
                     } else {
-                        showDialog(
-                            this,
-                            "Password should be contain one capital letter,one symbol & one number")
+                        showDialog(this, "Password should be in Alphanumeric pattern")
                         pDialog!!.hideProgressDialog()
                     }
                 } else {

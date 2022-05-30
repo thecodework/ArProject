@@ -4,10 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello_profile_fragment" />
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Profile is Empty"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/Brown"
+        android:textSize="14sp" />
 
 </FrameLayout>
