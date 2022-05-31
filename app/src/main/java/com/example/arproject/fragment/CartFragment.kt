@@ -16,7 +16,7 @@ import com.example.arproject.model.ModelCategory
 
 class CartFragment : Fragment() {
     lateinit var binding: FragmentCartBinding
-    var demoProductList: ArrayList<ModelCategory> = DemoData.getProductList()
+    var demoProductList: ArrayList<ModelCategory> = DemoData.getProductList(2)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
