@@ -13,7 +13,7 @@ class DemoData {
         }
 
         private fun getDemoModel(): ModelCategory {
-            val randomValue = Random.nextInt(1, 5)
+            val randomValue = Random.nextInt(1, 6)
             return ModelCategory(
                 getProductImage(randomValue),
                 getProductName(randomValue),
@@ -26,17 +26,25 @@ class DemoData {
         private fun getProductImage(pic: Int): Int {
             val productImageMap: Map<Int, Int> = mapOf(
                 1 to R.drawable.bedimage,
-                2 to R.drawable.sofa1,
+                2 to R.drawable.cupboard,
                 3 to R.drawable.table,
-                4 to R.drawable.yellowsofa,
-                5 to R.drawable.whitesofa
+                4 to R.drawable.whitesofa,
+                5 to R.drawable.yellowsofa,
+                6 to R.drawable.desk
             )
             return productImageMap.getValue(pic)
         }
 
         private fun getProductName(name: Int): String {
             val productName =
-                mapOf(1 to "Bed", 2 to "Sofa", 3 to "Table", 4 to "Sofa", 5 to "Sofa")
+                mapOf(
+                    1 to "Bed",
+                    2 to "Cupboard",
+                    3 to "Table",
+                    4 to "Sofa",
+                    5 to "Chair",
+                    6 to "Desk"
+                )
             return productName.getValue(name)
         }
 
