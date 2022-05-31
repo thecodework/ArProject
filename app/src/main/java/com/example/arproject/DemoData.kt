@@ -8,11 +8,18 @@ import kotlin.random.Random
 
 class DemoData {
     companion object {
-        fun getProductList(): ArrayList<ModelCategory> {
-            return arrayListOf(
+        fun getProductList(numberOfProduct: Int): ArrayList<ModelCategory> {
+            val productList = arrayListOf(
                 getDemoModel(1), getDemoModel(2), getDemoModel(3),
                 getDemoModel(4), getDemoModel(5), getDemoModel(6)
             )
+            return if (numberOfProduct >= productList.size) {
+                productList
+            } else {
+                val list = arrayListOf<ModelCategory>()
+                list.addAll(productList.subList(0, numberOfProduct))
+                list
+            }
         }
 
         private fun getDemoModel(number: Int): ModelCategory {

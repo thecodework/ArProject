@@ -25,6 +25,11 @@ class DetailsActivity : AppCompatActivity() {
         binding.imageBack.setOnClickListener {
             finish()
         }
+        binding.tvCart.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
+            intent.putExtra("value", "1")
+            startActivity(intent)
+        }
     }
 
     private fun initializer() {
