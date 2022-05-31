@@ -10,20 +10,15 @@ class DemoData {
     companion object {
         fun getProductList(): ArrayList<ModelCategory> {
             return arrayListOf(
-                getDemoModel(), getDemoModel(), getDemoModel(),
-                getDemoModel(), getDemoModel(), getDemoModel()
+                getDemoModel(1), getDemoModel(2), getDemoModel(3),
+                getDemoModel(4), getDemoModel(5), getDemoModel(6)
             )
         }
 
-        private fun getDemoModel(): ModelCategory {
-            /*val number = ArrayList<Int>()
-            for (i in 1..6) number.add(i)
-            number.shuffle()*/
-            val randomValue = Random.nextInt(1, 7)
-            Log.d("msg", randomValue.toString())
+        private fun getDemoModel(number: Int): ModelCategory {
             return ModelCategory(
-                getProductImage(randomValue),
-                getProductName(randomValue),
+                getProductImage(number),
+                getProductName(number),
                 Random.nextDouble(0.0, 5.0).toFloat(),
                 Random.nextInt(5000, 25000),
                 getProductDescription()
