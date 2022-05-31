@@ -1,7 +1,9 @@
 package com.example.arproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.arproject.databinding.ActivityDashboardBinding
 import com.example.arproject.fragment.CartFragment
@@ -21,8 +23,16 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-        supportFragmentManager.beginTransaction().replace(R.id.frameLayout, HomeFragment())
-            .commit()
+        val number: String? = intent.getStringExtra("value")
+        if (number != null) {
+            if (number.equals(1))
+                supportFragmentManager.beginTransaction().replace(R.id.frameLayout, CartFragment())
+                    .commit()
+            binding.bottomNav.selectedItemId = R.id.menuCart
+        } else {
+            supportFragmentManager.beginTransaction().replace(R.id.frameLayout, HomeFragment())
+                .commit()
+        }
         Utils.changeStatusBar(this, R.color.statusbar_color)
     }
 
