@@ -1,6 +1,9 @@
 package com.example.arproject
 
+import android.util.Log
 import com.example.arproject.model.ModelCategory
+import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.random.Random
 
 class DemoData {
@@ -13,7 +16,11 @@ class DemoData {
         }
 
         private fun getDemoModel(): ModelCategory {
-            val randomValue = Random.nextInt(1, 6)
+            /*val number = ArrayList<Int>()
+            for (i in 1..6) number.add(i)
+            number.shuffle()*/
+            val randomValue = Random.nextInt(1, 7)
+            Log.d("msg", randomValue.toString())
             return ModelCategory(
                 getProductImage(randomValue),
                 getProductName(randomValue),
@@ -30,7 +37,7 @@ class DemoData {
                 3 to R.drawable.table,
                 4 to R.drawable.whitesofa,
                 5 to R.drawable.yellowsofa,
-                6 to R.drawable.desk
+                6 to R.drawable.desk2
             )
             return productImageMap.getValue(pic)
         }
