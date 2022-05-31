@@ -2,5 +2,6 @@
     <style name="custom_progress">
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>
