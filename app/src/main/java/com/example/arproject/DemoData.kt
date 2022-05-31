@@ -1,14 +1,17 @@
 package com.example.arproject
 
+import android.util.Log
 import com.example.arproject.model.ModelCategory
+import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.random.Random
 
 class DemoData {
     companion object {
         fun getProductList(numberOfProduct: Int): ArrayList<ModelCategory> {
             val productList = arrayListOf(
-                getDemoModel(), getDemoModel(), getDemoModel(),
-                getDemoModel(), getDemoModel(), getDemoModel()
+                getDemoModel(1), getDemoModel(2), getDemoModel(3),
+                getDemoModel(4), getDemoModel(5), getDemoModel(6)
             )
             return if (numberOfProduct >= productList.size) {
                 productList
@@ -19,11 +22,10 @@ class DemoData {
             }
         }
 
-        private fun getDemoModel(): ModelCategory {
-            val randomValue = Random.nextInt(1, 5)
+        private fun getDemoModel(number: Int): ModelCategory {
             return ModelCategory(
-                getProductImage(randomValue),
-                getProductName(randomValue),
+                getProductImage(number),
+                getProductName(number),
                 Random.nextDouble(0.0, 5.0).toFloat(),
                 Random.nextInt(5000, 25000),
                 getProductDescription()
@@ -32,18 +34,26 @@ class DemoData {
 
         private fun getProductImage(pic: Int): Int {
             val productImageMap: Map<Int, Int> = mapOf(
-                1 to R.drawable.whitesofa,
-                2 to R.drawable.sofa1,
+                1 to R.drawable.bedimage,
+                2 to R.drawable.cupboard,
                 3 to R.drawable.table,
-                4 to R.drawable.yellowsofa,
-                5 to R.drawable.blacksofa
+                4 to R.drawable.whitesofa,
+                5 to R.drawable.yellowsofa,
+                6 to R.drawable.desk2
             )
             return productImageMap.getValue(pic)
         }
 
         private fun getProductName(name: Int): String {
             val productName =
-                mapOf(1 to "Sofa", 2 to "Sofa", 3 to "Table", 4 to "Sofa", 5 to "Sofa")
+                mapOf(
+                    1 to "Bed",
+                    2 to "Cupboard",
+                    3 to "Table",
+                    4 to "Sofa",
+                    5 to "Chair",
+                    6 to "Desk"
+                )
             return productName.getValue(name)
         }
 
