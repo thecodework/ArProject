@@ -27,7 +27,7 @@
                 android:layout_width="@dimen/space_160"
                 android:layout_height="@dimen/space_130"
                 android:scaleType="centerCrop"
-                android:src="@drawable/bedproduct"
+                android:src="@drawable/bedimage"
                 app:imageResource="@{modelCategory.categoryimage}" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
