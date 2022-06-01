@@ -27,7 +27,7 @@
                 android:paddingBottom="@dimen/space_8"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:spanCount="2"
-                tools:listitem="@layout/row_shop" />
+                tools:listitem="@layout/row_cart" />
         </androidx.core.widget.NestedScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
