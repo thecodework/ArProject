@@ -7,16 +7,16 @@
         android:layout_height="match_parent"
         android:background="@drawable/img">
 
-          <com.mikhaellopez.circularimageview.CircularImageView
-              android:id="@+id/imageProfile"
-              android:layout_width="@dimen/space_100"
-              android:layout_height="@dimen/space_100"
-              android:layout_gravity="center_vertical"
-              android:layout_marginTop="@dimen/space_20"
-              android:src="@drawable/profilepic"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="parent" />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_20"
+            android:src="@drawable/profilepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvName"
@@ -29,21 +29,7 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageProfile"
-            />
-
-        <!-- <TextView
-             android:id="@+id/tvItem"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="@dimen/space_2"
-             android:fontFamily="@font/poppins_semibold"
-             android:text="9456533268"
-             android:textColor="@color/Brown"
-             android:textSize="12sp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/tvName" />-->
+            app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardOrder"
