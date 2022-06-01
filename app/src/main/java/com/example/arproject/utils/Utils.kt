@@ -5,22 +5,13 @@ import android.app.Dialog
 import android.text.TextUtils
 import android.util.Patterns
 import android.view.Window
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.example.arproject.R
 
 class Utils {
 
     companion object {
-        fun changeStatusBar(activity: Activity, color: Int) {
-            val window = activity.window
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = ContextCompat.getColor(activity, color)
-        }
-
         fun isValidPassword(password: String?): Boolean {
             password?.let {
                 val passwordPattern =

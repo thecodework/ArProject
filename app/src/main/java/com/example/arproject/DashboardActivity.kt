@@ -2,13 +2,13 @@ package com.example.arproject
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.arproject.databinding.ActivityDashboardBinding
 import com.example.arproject.fragment.CartFragment
 import com.example.arproject.fragment.HomeFragment
 import com.example.arproject.fragment.ProfileFragment
 import com.example.arproject.fragment.ShopFragment
-import com.example.arproject.utils.Utils
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
@@ -30,7 +30,7 @@ class DashboardActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(R.id.frameLayout, HomeFragment())
                 .commit()
         }
-        Utils.changeStatusBar(this, R.color.statusbar_color)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.statusbar_color)
     }
 
     private fun setListener() {
