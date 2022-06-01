@@ -35,13 +35,11 @@ class DetailsActivity : AppCompatActivity() {
 
     private fun initializer() {
         Utils.changeStatusBar(this, R.color.white_new)
-        //   val pic: Int = intent.getIntExtra("image", 0)
         val intent = intent
         val user: UserModel = intent.getSerializableExtra("USER_KEY") as UserModel
         binding.imageItem.setImageResource(user.image!!)
         binding.tvItem.text = user.name
         binding.rBar.rating = user.rating!!
         binding.tvPrice.text = user.price!!.toString()
-        //  binding.imageItem.setImageResource(pic)
     }
 }

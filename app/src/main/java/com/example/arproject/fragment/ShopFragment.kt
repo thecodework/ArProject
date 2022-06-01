@@ -43,8 +43,6 @@ class ShopFragment : Fragment(), ShopAdapter.ItemClick {
         user.name = demoProductList[position].categoryname
         user.price = demoProductList[position].price
         user.rating = demoProductList[position].rating
-        // val pic: Int = demoProductList[position].categoryimage
-        // intent.putExtra("image", pic)
         intent.putExtra("USER_KEY", user)
         startActivity(intent)
     }
