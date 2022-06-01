@@ -3,6 +3,7 @@ package com.example.arproject
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityDetailsBinding
 import com.example.arproject.model.UserModel
@@ -34,7 +35,7 @@ class DetailsActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-        Utils.changeStatusBar(this, R.color.white_new)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.statusbar_color)
         val intent = intent
         val user: UserModel = intent.getSerializableExtra("USER_KEY") as UserModel
         binding.imageItem.setImageResource(user.image!!)
