@@ -22,10 +22,9 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun initializer() {
         val number: String? = intent.getStringExtra("value")
-        if (number != null) {
-            if (number.equals(1))
-                supportFragmentManager.beginTransaction().replace(R.id.frameLayout, CartFragment())
-                    .commit()
+        if (number?.equals("1") == true) {
+            supportFragmentManager.beginTransaction().replace(R.id.frameLayout, CartFragment())
+                .commit()
             binding.bottomNav.selectedItemId = R.id.menuCart
         } else {
             supportFragmentManager.beginTransaction().replace(R.id.frameLayout, HomeFragment())
