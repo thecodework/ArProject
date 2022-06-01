@@ -5,10 +5,8 @@ import android.app.Dialog
 import android.text.TextUtils
 import android.util.Patterns
 import android.view.Window
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.example.arproject.R
 
 class Utils {

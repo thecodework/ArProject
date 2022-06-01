@@ -9,7 +9,6 @@ import com.example.arproject.fragment.CartFragment
 import com.example.arproject.fragment.HomeFragment
 import com.example.arproject.fragment.ProfileFragment
 import com.example.arproject.fragment.ShopFragment
-import com.example.arproject.utils.Utils
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDashboardBinding
