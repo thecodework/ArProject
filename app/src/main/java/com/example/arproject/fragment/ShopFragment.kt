@@ -18,7 +18,7 @@ import com.example.arproject.model.UserModel
 
 class ShopFragment : Fragment(), ShopAdapter.ItemClick {
     lateinit var binding: FragmentShopBinding
-    var demoProductList: ArrayList<ModelCategory> = DemoData.getProductList(8)
+    private var demoProductList: ArrayList<ModelCategory> = DemoData.getProductList(8)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

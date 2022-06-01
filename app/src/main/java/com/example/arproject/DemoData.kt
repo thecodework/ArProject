@@ -1,9 +1,6 @@
 package com.example.arproject
 
-import android.util.Log
 import com.example.arproject.model.ModelCategory
-import java.util.*
-import kotlin.collections.ArrayList
 import kotlin.random.Random
 
 class DemoData {
