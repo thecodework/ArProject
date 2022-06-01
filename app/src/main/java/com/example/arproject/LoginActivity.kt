@@ -49,7 +49,6 @@ class LoginActivity : AppCompatActivity() {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
                         if (password.length > 8) {
-
                             Handler().postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
                                 pDialog!!.hideProgressDialog()

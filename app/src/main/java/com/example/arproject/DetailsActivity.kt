@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityDetailsBinding
+import com.example.arproject.model.UserModel
 import com.example.arproject.utils.Utils
 
 
@@ -34,7 +35,11 @@ class DetailsActivity : AppCompatActivity() {
 
     private fun initializer() {
         Utils.changeStatusBar(this, R.color.white_new)
-        val pic: Int = intent.getIntExtra("image", 0)
-        binding.imageItem.setImageResource(pic)
+        val intent = intent
+        val user: UserModel = intent.getSerializableExtra("USER_KEY") as UserModel
+        binding.imageItem.setImageResource(user.image!!)
+        binding.tvItem.text = user.name
+        binding.rBar.rating = user.rating!!
+        binding.tvPrice.text = user.price!!.toString()
     }
 }

@@ -196,7 +196,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/space_20"
                 android:fontFamily="@font/poppins_bold"
-                android:text="$750"
+                android:text="$"
+                android:textColor="@color/black_text"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="5678"
                 android:textColor="@color/black_text"
                 android:textSize="24sp" />
         </LinearLayout>
