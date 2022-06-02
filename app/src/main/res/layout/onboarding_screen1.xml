@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/img"
         android:orientation="vertical"
-        tools:context=".SplashScreen.OnBoardingScreen1">
+        tools:context=".splashScreen.OnBoardingScreen1">
 
         <TextView
             android:id="@+id/tvfurnish"

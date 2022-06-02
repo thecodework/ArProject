@@ -1,4 +1,4 @@
-package com.example.arproject.SplashScreen
+package com.example.arproject.splashScreen
 
 import android.annotation.SuppressLint
 import android.content.Intent

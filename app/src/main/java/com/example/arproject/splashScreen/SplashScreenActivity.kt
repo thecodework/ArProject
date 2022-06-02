@@ -1,4 +1,4 @@
-package com.example.arproject.SplashScreen
+package com.example.arproject.splashScreen
 
 import android.content.Intent
 import android.os.Bundle
