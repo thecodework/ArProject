@@ -11,4 +11,10 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Password</string>
     <string name="create_account">Create Account</string>
+    <string name="comfy_sofa">Comfy Sofa</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="_1">1</string>
+    <string name="$">$</string>
+    <string name="price">5678</string>
+    <string name="_2_colors">+ 2 colors</string>
 </resources>
