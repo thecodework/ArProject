@@ -37,7 +37,7 @@ class HomeFragment : Fragment(), ProductAdapter.ItemClick {
         binding.rvProducts.adapter = ProductAdapter(demoProductList, this)
     }
 
-    override fun onClick(position: Int) {
+     override fun onClick(position: Int) {
         val intent = Intent(context, DetailsActivity::class.java)
         intent.putExtra("USER_KEY", demoProductList[position])
         startActivity(intent)
