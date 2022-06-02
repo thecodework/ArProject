@@ -2,15 +2,15 @@ package com.example.arproject
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.databinding.ActivityLoginBinding
+import com.example.arproject.utils.ProgressDialog
+import com.example.arproject.utils.Utils
 import com.example.arproject.utils.Utils.Companion.isValidEmail
 import com.example.arproject.utils.Utils.Companion.isValidPassword
 import com.example.arproject.utils.Utils.Companion.showDialog
-import com.example.arproject.databinding.ActivityLoginBinding
-import com.example.arproject.utils.ProgressDialog
 
 class LoginActivity : AppCompatActivity() {
 
@@ -74,6 +74,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        Utils.hideStatusBar(binding.tvfurnish)
     }
 }
