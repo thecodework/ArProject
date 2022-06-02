@@ -18,7 +18,6 @@ class Utils {
     companion object {
         fun hideStatusBar(view: View) {
             if (Build.VERSION.SDK_INT >= 30) {
-                Log.d("check", "if call")
                 view.windowInsetsController?.hide(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
             } else {
                 view.systemUiVisibility =
