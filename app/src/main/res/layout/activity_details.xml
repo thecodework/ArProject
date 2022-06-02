@@ -125,7 +125,7 @@
                 android:background="@drawable/buttonback"
                 android:fontFamily="@font/poppins_semibold"
                 android:padding="@dimen/space_8"
-                android:text=" View in AR "
+                android:text="@string/view_in_ar"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="12sp" />

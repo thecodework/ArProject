@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Showing Sofas"
+                android:text="@string/showing_sofas"
                 android:textColor="@color/black_text"
                 android:textSize="18sp" />
 
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_medium"
-                android:text="20,000 items"
+                android:text="@string/items"
                 android:textColor="@color/grey"
                 android:textSize="14sp" />
 
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Sort"
+                android:text="@string/sort"
                 android:textColor="@color/blue"
                 android:textSize="14sp" />
 
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Filter"
+                android:text="@string/filter"
                 android:textColor="@color/blue"
                 android:textSize="14sp" />
         </LinearLayout>
