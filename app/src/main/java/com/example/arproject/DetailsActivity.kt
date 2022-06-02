@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityDetailsBinding
-import com.example.arproject.model.UserModel
+import com.example.arproject.model.ModelCategory
 
 
 class DetailsActivity : AppCompatActivity() {
@@ -36,10 +36,10 @@ class DetailsActivity : AppCompatActivity() {
     private fun initializer() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.statusbar_color)
         val intent = intent
-        val user: UserModel = intent.getSerializableExtra("USER_KEY") as UserModel
-        binding.imageItem.setImageResource(user.image!!)
-        binding.tvItem.text = user.name
-        binding.rBar.rating = user.rating!!
-        binding.tvPrice.text = user.price!!.toString()
+        val user = intent.getSerializableExtra("USER_KEY") as ModelCategory
+        binding.imageItem.setImageResource(user.categoryimage)
+        binding.tvItem.text = user.categoryname
+        binding.rBar.rating = user.rating
+        binding.tvPrice.text = user.price.toString()
     }
 }

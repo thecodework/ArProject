@@ -2,9 +2,13 @@ package com.example.arproject.utils
 
 import android.app.Activity
 import android.app.Dialog
+import android.os.Build
 import android.text.TextUtils
+import android.util.Log
 import android.util.Patterns
+import android.view.View
 import android.view.Window
+import android.view.WindowInsets
 import android.widget.Button
 import android.widget.TextView
 import com.example.arproject.R
@@ -12,6 +16,20 @@ import com.example.arproject.R
 class Utils {
 
     companion object {
+        fun hideStatusBar(view: View) {
+            if (Build.VERSION.SDK_INT >= 30) {
+                Log.d("check", "if call")
+                view.windowInsetsController?.hide(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
+            } else {
+                view.systemUiVisibility =
+                    View.SYSTEM_UI_FLAG_LOW_PROFILE or
+                            View.SYSTEM_UI_FLAG_FULLSCREEN or
+                            View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+                            View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
+                            View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
+                            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+            }
+        }
         fun isValidPassword(password: String?): Boolean {
             password?.let {
                 val passwordPattern =

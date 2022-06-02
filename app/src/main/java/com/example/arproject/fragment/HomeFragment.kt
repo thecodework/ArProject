@@ -14,7 +14,6 @@ import com.example.arproject.adapter.CategoryAdapter
 import com.example.arproject.adapter.ProductAdapter
 import com.example.arproject.databinding.FragmentHomeBinding
 import com.example.arproject.model.ModelCategory
-import com.example.arproject.model.UserModel
 
 
 class HomeFragment : Fragment(), ProductAdapter.ItemClick {
@@ -30,12 +29,7 @@ class HomeFragment : Fragment(), ProductAdapter.ItemClick {
             R.layout.fragment_home, container, false
         )
         initializer()
-        setListener()
         return binding.root
-    }
-
-    private fun setListener() {
-
     }
 
     private fun initializer() {
@@ -45,12 +39,7 @@ class HomeFragment : Fragment(), ProductAdapter.ItemClick {
 
     override fun onClick(position: Int) {
         val intent = Intent(context, DetailsActivity::class.java)
-        val user = UserModel()
-        user.image = demoProductList[position].categoryimage
-        user.name = demoProductList[position].categoryname
-        user.price = demoProductList[position].price
-        user.rating = demoProductList[position].rating
-        intent.putExtra("USER_KEY", user)
+        intent.putExtra("USER_KEY", demoProductList[position])
         startActivity(intent)
     }
 }
