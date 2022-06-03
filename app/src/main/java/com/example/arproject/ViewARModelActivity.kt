@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityViewArmodelBinding
+import com.example.arproject.utils.Utils
 import com.google.ar.core.ArCoreApk
 import com.google.ar.core.exceptions.UnavailableException
 import com.google.ar.sceneform.AnchorNode
@@ -87,11 +88,16 @@ class ViewARModelActivity : AppCompatActivity() {
         setUpPlane()
         setOnClickListener()
     }
-    private fun setOnClickListener(){
+
+    private fun setOnClickListener() {
         binding.btnArrowBack.setOnClickListener {
             finish()
         }
+        binding.imageCross.setOnClickListener {
+            Utils.showARDialog(this)
+        }
     }
+
     private fun setUpModel() {
         ModelRenderable.builder()
             .setSource(

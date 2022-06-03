@@ -12,6 +12,7 @@
     <string name="enter_password">Password</string>
     <string name="create_account">Create Account</string>
     <string name="close_ar_mode">Close AR Mode</string>
-    <string name="ok">ok</string>
+    <string name="ok">OK</string>
     <string name="are_you_sure_you_want_to_close_the_ar_mode">Are you sure you want to close the AR Mode?</string>
+    <string name="cancel">Cancel</string>
 </resources>

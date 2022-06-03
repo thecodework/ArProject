@@ -22,13 +22,14 @@
             android:layout_marginLeft="@dimen/space_16"
             android:layout_marginTop="@dimen/space_24"
             android:src="@drawable/back_arrow" />
+
         <ImageView
             android:id="@+id/imageCross"
             android:layout_width="@dimen/space_20"
             android:layout_height="@dimen/space_20"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/space_16"
             android:layout_marginTop="@dimen/space_24"
+            android:layout_marginRight="@dimen/space_16"
             android:src="@drawable/cross" />
 
     </RelativeLayout>
