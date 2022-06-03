@@ -37,7 +37,7 @@
                 android:layout_marginLeft="@dimen/space_8"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_semibold"
-                android:hint="Search..."
+                android:hint="@string/search"
                 android:textColorHint="@color/grey" />
         </LinearLayout>
     </LinearLayout>

@@ -3,14 +3,14 @@ package com.example.arproject
 import android.content.ContentValues.TAG
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityViewArmodelBinding
+import com.example.arproject.utils.Utils
 import com.google.ar.core.ArCoreApk
 import com.google.ar.core.exceptions.UnavailableException
 import com.google.ar.sceneform.AnchorNode
@@ -81,7 +81,7 @@ class ViewARModelActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        Utils.hideStatusBar(binding.btnArrowBack)
         arFragment = supportFragmentManager.findFragmentById(R.id.fragment) as ArFragment?
         setUpModel()
         setUpPlane()
