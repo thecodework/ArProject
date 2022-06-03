@@ -6,7 +6,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.arproject.R
 import com.example.arproject.databinding.RowCartBinding
-import com.example.arproject.databinding.RowShopBinding
 import com.example.arproject.model.ModelCategory
 
 class CartAdapter(
