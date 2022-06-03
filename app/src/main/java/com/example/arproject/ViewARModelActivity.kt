@@ -87,11 +87,16 @@ class ViewARModelActivity : AppCompatActivity() {
         setUpPlane()
         setOnClickListener()
     }
-    private fun setOnClickListener(){
+
+    private fun setOnClickListener() {
         binding.btnArrowBack.setOnClickListener {
             finish()
         }
+        binding.imageCross.setOnClickListener {
+            Utils.showARDialog(this)
+        }
     }
+
     private fun setUpModel() {
         ModelRenderable.builder()
             .setSource(

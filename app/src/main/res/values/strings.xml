@@ -11,6 +11,10 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Password</string>
     <string name="create_account">Create Account</string>
+    <string name="close_ar_mode">Close AR Mode</string>
+    <string name="ok">OK</string>
+    <string name="are_you_sure_you_want_to_close_the_ar_mode">Are you sure you want to close the AR Mode?</string>
+    <string name="cancel">Cancel</string>
     <string name="comfy_sofa">Comfy Sofa</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="_1">1</string>
@@ -19,7 +23,6 @@
     <string name="_2_colors">+ 2 colors</string>
     <string name="password_should_be_in_alphanumeric_pattern">Password should be in Alphanumeric pattern</string>
     <string name="alert">Alert!</string>
-    <string name="ok">ok</string>
     <string name="view_in_ar">View in AR</string>
     <string name="shop_by_category">Shop by Category</string>
     <string name="top_trending_products">Top Trending Products</string>

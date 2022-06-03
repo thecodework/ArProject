@@ -2,7 +2,6 @@
 <layout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,16 +13,24 @@
             android:name="com.google.ar.sceneform.ux.ArFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
         <ImageView
             android:id="@+id/btnArrow_back"
             android:layout_width="@dimen/space_20"
             android:layout_height="@dimen/space_20"
-            android:src="@drawable/back_arrow"
-            android:layout_marginLeft="@dimen/space_16"
-            android:layout_marginTop="@dimen/space_20"
             android:layout_alignParentLeft="true"
-            />
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_24"
+            android:src="@drawable/back_arrow" />
 
+        <ImageView
+            android:id="@+id/imageCross"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_24"
+            android:layout_marginRight="@dimen/space_16"
+            android:src="@drawable/cross" />
 
     </RelativeLayout>
 </layout>

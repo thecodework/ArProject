@@ -20,9 +20,10 @@ class Utils {
                 view.windowInsetsController?.hide(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
             } else {
                 view.systemUiVisibility =
-                            View.SYSTEM_UI_FLAG_FULLSCREEN
+                    View.SYSTEM_UI_FLAG_FULLSCREEN
             }
         }
+
         fun isValidPassword(password: String?): Boolean {
             password?.let {
                 val passwordPattern =
@@ -48,6 +49,23 @@ class Utils {
             val btnOk = dialog.findViewById(R.id.btnOk) as Button
             btnOk.setOnClickListener {
                 dialog.dismiss()
+            }
+            dialog.show()
+        }
+
+        fun showARDialog(activity: Activity) {
+            val dialog = Dialog(activity)
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+            dialog.setCancelable(false)
+            dialog.setContentView(R.layout.ar_dailogbox)
+            val btnOk = dialog.findViewById(R.id.btnOk) as Button
+            val btnCancel = dialog.findViewById(R.id.btnCancel) as Button
+            btnCancel.setOnClickListener {
+                dialog.dismiss()
+            }
+            btnOk.setOnClickListener {
+                activity.finish()
             }
             dialog.show()
         }
