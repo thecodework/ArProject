@@ -9,15 +9,23 @@
         android:background="@color/white_new"
         tools:context=".DetailsActivity">
 
-        <ImageView
-            android:id="@+id/imageBack"
-            android:layout_width="@dimen/space_20"
-            android:layout_height="@dimen/space_20"
-            android:layout_marginLeft="@dimen/space_12"
-            android:layout_marginTop="@dimen/space_12"
-            android:src="@drawable/backgreybutton"
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:background="@color/statusbar_color"
+            android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_12"
+                android:src="@drawable/backgreybutton" />
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardImage"
@@ -31,7 +39,7 @@
             app:cardUseCompatPadding="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageBack">
+            app:layout_constraintTop_toBottomOf="@+id/linear">
 
             <ImageView
                 android:id="@+id/imageItem"
