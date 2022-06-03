@@ -2,7 +2,6 @@
 <layout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/llLoginActivity"
         android:layout_width="match_parent"
@@ -93,9 +92,9 @@
             android:layout_margin="@dimen/space_20"
             android:background="@drawable/ic_round_button"
             android:hint="@string/enter_email"
-            android:padding="@dimen/space_16"
+            android:padding="@dimen/space_12"
             android:textColorHint="@color/white_new"
-            android:textSize="@dimen/text_22" />
+            android:textSize="@dimen/text_20" />
 
         <EditText
             android:id="@+id/edPassword"
@@ -106,9 +105,9 @@
             android:background="@drawable/ic_round_button"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
-            android:padding="@dimen/space_16"
+            android:padding="@dimen/space_12"
             android:textColorHint="@color/white_new"
-            android:textSize="@dimen/text_22" />
+            android:textSize="@dimen/text_20" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLoginActivity"

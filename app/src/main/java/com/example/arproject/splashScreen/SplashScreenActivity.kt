@@ -1,8 +1,9 @@
-package com.example.arproject.SplashScreen
+package com.example.arproject.splashScreen
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.R
@@ -17,10 +18,9 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_splashscreen)
         hideStatusBar(binding.tvfurnish)
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, OnBoardingScreen1::class.java)
             startActivity(intent)
-
         }, 3000)
     }
 }

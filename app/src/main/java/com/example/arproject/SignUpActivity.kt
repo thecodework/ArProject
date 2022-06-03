@@ -3,7 +3,7 @@ package com.example.arproject
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivitySignupBinding
@@ -23,7 +23,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        Utils.hideStatusBar(binding.tvfurnish)
     }
 
     private fun setListener() {
@@ -36,11 +36,11 @@ class SignUpActivity : AppCompatActivity() {
                 if (Utils.isValidEmail(email)) {
                     if (Utils.isValidPassword(password)) {
                         if (password.length > 8) {
-                            Handler().postDelayed({
+                            Handler(Looper.getMainLooper()).postDelayed({
                                 val intent = Intent(this, DashboardActivity::class.java)
-                               pDialog!!.hideProgressDialog()
+                                pDialog!!.hideProgressDialog()
                                 startActivity(intent)
-                            }, 3000) // 3000 is the delayed time in milliseconds.
+                            }, 1000)
                         } else {
                             Utils.showDialog(this, "Password should be greater than 8 digit")
                             pDialog!!.hideProgressDialog()

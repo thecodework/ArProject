@@ -2,15 +2,16 @@ package com.example.arproject
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.databinding.ActivityLoginBinding
+import com.example.arproject.utils.ProgressDialog
+import com.example.arproject.utils.Utils
 import com.example.arproject.utils.Utils.Companion.isValidEmail
 import com.example.arproject.utils.Utils.Companion.isValidPassword
 import com.example.arproject.utils.Utils.Companion.showDialog
-import com.example.arproject.databinding.ActivityLoginBinding
-import com.example.arproject.utils.ProgressDialog
 
 class LoginActivity : AppCompatActivity() {
 
@@ -24,22 +25,15 @@ class LoginActivity : AppCompatActivity() {
         setListener()
         pDialog = ProgressDialog(this)
     }
+
     private fun setListener() {
-        binding.imgGoogle.setOnClickListener{
+        binding.imgGoogle.setOnClickListener {
             pDialog!!.showProgressDialog()
-            Handler().postDelayed({
-                val intent = Intent(this, DashboardActivity::class.java)
-                pDialog!!.hideProgressDialog()
-                startActivity(intent)
-            }, 1000) // 3000 is the delayed time in milliseconds.
+            changeClass()
         }
-        binding.imgFacebook.setOnClickListener{
+        binding.imgFacebook.setOnClickListener {
             pDialog!!.showProgressDialog()
-            Handler().postDelayed({
-                val intent = Intent(this, DashboardActivity::class.java)
-                pDialog!!.hideProgressDialog()
-                startActivity(intent)
-            }, 1000) // 3000 is the delayed time in milliseconds.
+            changeClass()
         }
         binding.btnLoginActivity.setOnClickListener {
             pDialog!!.showProgressDialog()
@@ -49,11 +43,7 @@ class LoginActivity : AppCompatActivity() {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
                         if (password.length > 8) {
-                            Handler().postDelayed({
-                                val intent = Intent(this, DashboardActivity::class.java)
-                                pDialog!!.hideProgressDialog()
-                                startActivity(intent)
-                            }, 3000) // 3000 is the delayed time in milliseconds.
+                            changeClass()
                         } else {
                             showDialog(this, "Password should be greater than 8 digit")
                             pDialog!!.hideProgressDialog()
@@ -74,6 +64,14 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun initializer() {
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        Utils.hideStatusBar(binding.tvfurnish)
+    }
+
+    private fun changeClass() {
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, DashboardActivity::class.java)
+            pDialog!!.hideProgressDialog()
+            startActivity(intent)
+        }, 1000)
     }
 }

@@ -2,14 +2,13 @@
 <layout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/llHomeActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/img"
         android:orientation="vertical"
-        tools:context=".SplashScreen.SplashScreenActivity">
+        tools:context=".splashScreen.SplashScreenActivity">
 
         <TextView
             android:id="@+id/tvfurnish"

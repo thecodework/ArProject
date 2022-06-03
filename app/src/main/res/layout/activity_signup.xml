@@ -2,7 +2,6 @@
 <layout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/llSignUp"
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:hint="@string/enter_your_name"
             android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="@dimen/text_22" />
+            android:textSize="@dimen/text_20" />
 
         <EditText
             android:id="@+id/edEmail"
@@ -59,7 +58,7 @@
             android:hint="@string/enter_email"
             android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="@dimen/text_22" />
+            android:textSize="@dimen/text_20" />
 
         <EditText
             android:id="@+id/edPassword"
@@ -72,7 +71,7 @@
             android:inputType="textPassword"
             android:padding="@dimen/space_10"
             android:textColorHint="@color/white_new"
-            android:textSize="@dimen/text_22" />
+            android:textSize="@dimen/text_20" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCreateAccount"

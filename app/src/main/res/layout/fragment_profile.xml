@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_5"
             android:fontFamily="@font/poppins_medium"
-            android:text="Edit Profile"
+            android:text="@string/edit_profile"
             android:textColor="@color/Brown"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/space_20"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="My Order"
+                    android:text="@string/my_order"
                     android:textColor="@color/Brown"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/space_20"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Notification"
+                    android:text="@string/notification"
                     android:textColor="@color/Brown"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/space_20"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Settings"
+                    android:text="@string/settings"
                     android:textColor="@color/Brown"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -177,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/space_20"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Logout"
+                    android:text="@string/logout"
                     android:textColor="@color/Brown"
                     android:textSize="16sp" />
             </LinearLayout>
