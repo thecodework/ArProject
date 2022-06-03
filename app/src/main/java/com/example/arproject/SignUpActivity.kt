@@ -37,7 +37,7 @@ class SignUpActivity : AppCompatActivity() {
                     if (Utils.isValidPassword(password)) {
                         if (password.length > 8) {
                             Handler(Looper.getMainLooper()).postDelayed({
-                                val intent = Intent(this, LoginActivity::class.java)
+                                val intent = Intent(this, DashboardActivity::class.java)
                                 pDialog!!.hideProgressDialog()
                                 startActivity(intent)
                             }, 1000)
