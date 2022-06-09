@@ -112,6 +112,11 @@ class ViewARModelActivity : AppCompatActivity() {
             .build()
             .thenAccept { renewable: ModelRenderable ->
                 modelRenewable = renewable
+                Toast.makeText(
+                    this,
+                    "Please tap on the white dots to load model",
+                    Toast.LENGTH_LONG
+                ).show()
             }
             .exceptionally {
                 Toast.makeText(
