@@ -1,18 +1,14 @@
 package com.example.arproject
 
-import android.content.ContentValues.TAG
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityViewArmodelBinding
 import com.example.arproject.utils.Utils
-import com.google.ar.core.ArCoreApk
-import com.google.ar.core.exceptions.UnavailableException
 import com.google.ar.sceneform.AnchorNode
 import com.google.ar.sceneform.assets.RenderableSource
 import com.google.ar.sceneform.rendering.ModelRenderable
@@ -30,54 +26,6 @@ class ViewARModelActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_view_armodel)
         init()
-        //isARCoreSupportedAndUpToDate()
-    }
-
-    fun isARCoreSupportedAndUpToDate(): Boolean {
-        return when (ArCoreApk.getInstance().checkAvailability(this)) {
-            ArCoreApk.Availability.SUPPORTED_INSTALLED -> {
-                Log.d(TAG, "SUPPORTED_INSTALLED")
-                true
-            }
-            ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED -> {
-                try {
-                    // Request ARCore installation or update if needed.
-                    when (ArCoreApk.getInstance().requestInstall(this, true)) {
-                        ArCoreApk.InstallStatus.INSTALL_REQUESTED -> {
-                            Log.d(TAG, "ARCore installation requested.")
-                            false
-                        }
-                        ArCoreApk.InstallStatus.INSTALLED -> {
-                            Log.d(TAG, "Request installed")
-                            true
-                        }
-                    }
-                } catch (e: UnavailableException) {
-                    Log.d(TAG, "ARCore not installed", e)
-                    false
-                }
-            }
-            ArCoreApk.Availability.UNSUPPORTED_DEVICE_NOT_CAPABLE -> {
-                Log.d(TAG, "UNSUPPORTED_DEVICE_NOT_CAPABLE")
-                false
-            }
-            ArCoreApk.Availability.UNKNOWN_CHECKING -> {
-                Log.d(TAG, "UNKNOWN_CHECKING")
-                false
-            }
-            ArCoreApk.Availability.UNKNOWN_ERROR -> {
-                Log.d(TAG, "UNKNOWN_ERROR")
-                false
-            }
-            ArCoreApk.Availability.UNKNOWN_TIMED_OUT -> {
-                Log.d(TAG, "UNKNOWN_TIMED_OUT")
-                false
-            }
-            ArCoreApk.Availability.SUPPORTED_APK_TOO_OLD -> {
-                Log.d(TAG, "SUPPORTED_APK_TOO_OLD")
-                false
-            }
-        }
     }
 
     private fun init() {
