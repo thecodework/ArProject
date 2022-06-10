@@ -31,11 +31,11 @@ class DemoData {
 
         private fun getProductImage(pic: Int): Int {
             val productImageMap: Map<Int, Int> = mapOf(
-                1 to R.drawable.bedimage,
+                1 to R.drawable.bluechair,
                 2 to R.drawable.cupboard,
                 3 to R.drawable.table,
                 4 to R.drawable.whitesofa,
-                5 to R.drawable.yellowsofa,
+                5 to R.drawable.bedimage,
                 6 to R.drawable.desk2
             )
             return productImageMap.getValue(pic)
@@ -44,11 +44,11 @@ class DemoData {
         private fun getProductName(name: Int): String {
             val productName =
                 mapOf(
-                    1 to "Bed",
+                    1 to "Chair",
                     2 to "Cupboard",
                     3 to "Table",
                     4 to "Sofa",
-                    5 to "Chair",
+                    5 to "Bed",
                     6 to "Desk"
                 )
             return productName.getValue(name)
