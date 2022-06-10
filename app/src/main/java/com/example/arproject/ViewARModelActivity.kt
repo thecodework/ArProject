@@ -1,10 +1,8 @@
 package com.example.arproject
 
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.databinding.ActivityViewArmodelBinding
@@ -15,7 +13,6 @@ import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 
-@RequiresApi(Build.VERSION_CODES.N)
 class ViewARModelActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityViewArmodelBinding
