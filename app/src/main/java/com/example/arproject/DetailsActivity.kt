@@ -1,10 +1,8 @@
 package com.example.arproject
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
@@ -61,7 +59,6 @@ class DetailsActivity : AppCompatActivity() {
     private fun isARCoreSupportedAndUpToDate(): Boolean {
         return when (ArCoreApk.getInstance().checkAvailability(this)) {
             ArCoreApk.Availability.SUPPORTED_INSTALLED -> {
-                Log.d(TAG, "SUPPORTED_INSTALLED")
                 availability = ArCoreApk.Availability.SUPPORTED_INSTALLED
                 val intent = Intent(this, ViewARModelActivity::class.java)
                 startActivity(intent)
@@ -72,13 +69,11 @@ class DetailsActivity : AppCompatActivity() {
                     if (count < 1) {
                         when (ArCoreApk.getInstance().requestInstall(this, true)) {
                             ArCoreApk.InstallStatus.INSTALL_REQUESTED -> {
-                                Log.d(TAG, "ARCore installation requested.")
                                 count++
                                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                                 true
                             }
                             ArCoreApk.InstallStatus.INSTALLED -> {
-                                Log.d(TAG, "Request installed")
                                 availability = ArCoreApk.Availability.SUPPORTED_INSTALLED
                                 true
                             }
@@ -86,33 +81,27 @@ class DetailsActivity : AppCompatActivity() {
                     }
                     true
                 } catch (e: UnavailableException) {
-                    Log.d(TAG, "ARCore not installed", e)
                     availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                     false
                 }
             }
             ArCoreApk.Availability.UNSUPPORTED_DEVICE_NOT_CAPABLE -> {
-                Log.d(TAG, "UNSUPPORTED_DEVICE_NOT_CAPABLE")
                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                 false
             }
             ArCoreApk.Availability.UNKNOWN_CHECKING -> {
-                Log.d(TAG, "UNKNOWN_CHECKING")
                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                 false
             }
             ArCoreApk.Availability.UNKNOWN_ERROR -> {
-                Log.d(TAG, "UNKNOWN_ERROR")
                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                 false
             }
             ArCoreApk.Availability.UNKNOWN_TIMED_OUT -> {
-                Log.d(TAG, "UNKNOWN_TIMED_OUT")
                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                 false
             }
             ArCoreApk.Availability.SUPPORTED_APK_TOO_OLD -> {
-                Log.d(TAG, "SUPPORTED_APK_TOO_OLD")
                 availability = ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED
                 false
             }
@@ -121,7 +110,6 @@ class DetailsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "OnResume call")
         if (count > 0) {
             isARCoreSupportedAndUpToDate()
         }
