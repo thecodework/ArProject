@@ -47,7 +47,7 @@ class DetailsActivity : AppCompatActivity() {
         binding.tvPrice.text = user.price.toString()
     }
 
-    fun isARCoreSupportedAndUpToDate(): Boolean {
+    private fun isARCoreSupportedAndUpToDate(): Boolean {
         return when (ArCoreApk.getInstance().checkAvailability(this)) {
             ArCoreApk.Availability.SUPPORTED_INSTALLED -> {
                 Log.d(ContentValues.TAG, "SUPPORTED_INSTALLED")
@@ -57,7 +57,6 @@ class DetailsActivity : AppCompatActivity() {
             }
             ArCoreApk.Availability.SUPPORTED_NOT_INSTALLED -> {
                 try {
-                    // Request ARCore installation or update if needed.
                     when (ArCoreApk.getInstance().requestInstall(this, true)) {
                         ArCoreApk.InstallStatus.INSTALL_REQUESTED -> {
                             Log.d(ContentValues.TAG, "ARCore installation requested.")
