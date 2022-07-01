@@ -37,4 +37,6 @@
     <string name="sort">Sort</string>
     <string name="filter">Filter</string>
     <string name="search">Search…</string>
+    <string name="modelBlueChair">"https://arvr.google.com/scene-viewer/1.0?file=https://drive.google.com/u/2/uc?id=1ZrVO6LdVIZS8kfMtQCcP4LmUNk2BlINj&amp;export=download"</string>
+    <string name="modelChair">"https://arvr.google.com/scene-viewer/1.0?file=https://modelviewer.dev/assets/ShopifyModels/Chair.glb"</string>
 </resources>

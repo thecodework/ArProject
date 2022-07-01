@@ -118,7 +118,11 @@ class DetailsActivity : AppCompatActivity() {
     private fun navigateToARScreen() {
         val sceneViewerIntent = Intent(Intent.ACTION_VIEW)
         sceneViewerIntent.data =
-            Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://drive.google.com/u/2/uc?id=1ZrVO6LdVIZS8kfMtQCcP4LmUNk2BlINj&export=download")
+            Uri.parse(getString(R.string.modelChair))
+                .buildUpon()
+                .appendQueryParameter("resizable", "true")
+                .appendQueryParameter("mode","ar_only")
+                .build()
         startActivity(sceneViewerIntent)
     }
 }
