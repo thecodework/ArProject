@@ -48,7 +48,7 @@ class ViewARModelActivity : AppCompatActivity() {
                 this, RenderableSource.builder()
                     .setSource(
                         this,
-                        Uri.parse("bluechair.glb"),
+                        Uri.parse("chair.glb"),
                         RenderableSource.SourceType.GLB
                     )
                     .setRecenterMode(RenderableSource.RecenterMode.CENTER)
@@ -87,8 +87,8 @@ class ViewARModelActivity : AppCompatActivity() {
         val node = TransformableNode(arFragment!!.transformationSystem)
         node.setParent(anchorNode)
         node.renderable = modelRenewable
-        node.scaleController.maxScale = 0.5f
-        node.scaleController.minScale = 0.25f
+        node.scaleController.maxScale = 1.0f
+        node.scaleController.minScale = 0.5f
         node.select()
     }
 }
