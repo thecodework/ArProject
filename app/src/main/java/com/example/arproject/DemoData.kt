@@ -31,7 +31,7 @@ class DemoData {
 
         private fun getProductImage(pic: Int): Int {
             val productImageMap: Map<Int, Int> = mapOf(
-                1 to R.drawable.bluechair,
+                1 to R.drawable.blackchair,
                 2 to R.drawable.cupboard,
                 3 to R.drawable.table,
                 4 to R.drawable.whitesofa,
