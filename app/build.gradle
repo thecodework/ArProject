@@ -8,7 +8,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.thecodework.arfurniture"
+        applicationId "debsin.thecodework.arfurniture"
         minSdk 24
         targetSdk 32
         versionCode 1
