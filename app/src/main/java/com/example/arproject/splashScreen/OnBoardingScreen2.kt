@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.arproject.R
-import com.example.arproject.SignUpActivity
+import com.example.arproject.ui.SignUpActivity
 import com.example.arproject.databinding.OnboardingScreen2Binding
 import com.example.arproject.utils.Utils
 

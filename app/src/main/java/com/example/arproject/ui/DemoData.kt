@@ -1,5 +1,6 @@
-package com.example.arproject
+package com.example.arproject.ui
 
+import com.example.arproject.R
 import com.example.arproject.model.ModelCategory
 import kotlin.random.Random
 

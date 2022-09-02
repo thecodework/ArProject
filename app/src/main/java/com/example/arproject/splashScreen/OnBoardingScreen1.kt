@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.arproject.LoginActivity
+import com.example.arproject.ui.LoginActivity
 import com.example.arproject.R
-import com.example.arproject.SignUpActivity
+import com.example.arproject.ui.SignUpActivity
 import com.example.arproject.databinding.OnboardingScreen1Binding
 import com.example.arproject.utils.Utils
 

@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/statusbar_color"
-        tools:context=".DashboardActivity">
+        tools:context=".ui.DashboardActivity">
 
         <include
             layout="@layout/search"

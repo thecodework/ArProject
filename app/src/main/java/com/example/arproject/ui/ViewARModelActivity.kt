@@ -1,10 +1,11 @@
-package com.example.arproject
+package com.example.arproject.ui
 
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.R
 import com.example.arproject.databinding.ActivityViewArmodelBinding
 import com.example.arproject.utils.Utils
 import com.google.ar.sceneform.AnchorNode

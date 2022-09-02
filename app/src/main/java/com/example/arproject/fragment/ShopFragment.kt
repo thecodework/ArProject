@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.example.arproject.DemoData
-import com.example.arproject.DetailsActivity
+import com.example.arproject.ui.DemoData
+import com.example.arproject.ui.DetailsActivity
 import com.example.arproject.R
 import com.example.arproject.adapter.ShopAdapter
 import com.example.arproject.databinding.FragmentShopBinding

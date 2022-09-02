@@ -25,13 +25,13 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsActivity"
+            android:name=".ui.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".ui.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".ViewARModelActivity"
+            android:name=".ui.ViewARModelActivity"
             android:exported="false" />
         <activity
             android:name=".splashScreen.SplashScreenActivity"
@@ -45,8 +45,8 @@
 
         <activity android:name=".splashScreen.OnBoardingScreen1" />
         <activity android:name=".splashScreen.OnBoardingScreen2" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.SignUpActivity" />
         <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
 

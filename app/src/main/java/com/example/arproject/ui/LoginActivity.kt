@@ -1,4 +1,4 @@
-package com.example.arproject
+package com.example.arproject.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.R
 import com.example.arproject.databinding.ActivityLoginBinding
 import com.example.arproject.utils.ProgressDialog
 import com.example.arproject.utils.Utils

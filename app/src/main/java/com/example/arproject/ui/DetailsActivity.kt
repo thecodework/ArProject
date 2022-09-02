@@ -1,4 +1,4 @@
-package com.example.arproject
+package com.example.arproject.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import com.example.arproject.R
 import com.example.arproject.databinding.ActivityDetailsBinding
 import com.example.arproject.model.ModelCategory
 import com.google.ar.core.ArCoreApk

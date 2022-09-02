@@ -1,9 +1,10 @@
-package com.example.arproject
+package com.example.arproject.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.example.arproject.R
 import com.example.arproject.databinding.ActivityDashboardBinding
 import com.example.arproject.fragment.CartFragment
 import com.example.arproject.fragment.HomeFragment
