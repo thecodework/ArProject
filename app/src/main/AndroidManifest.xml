@@ -9,10 +9,6 @@
     <uses-feature
         android:name="android.hardware.camera.ar"
         android:required="true" />
-    <uses-feature
-        android:glEsVersion="0x00030000"
-        android:required="true" />
-
 
     <application
         android:allowBackup="true"
@@ -47,7 +43,10 @@
         <activity android:name="debsin.thecodework.arfurniture.splashScreen.OnBoardingScreen2" />
         <activity android:name="debsin.thecodework.arfurniture.ui.LoginActivity" />
         <activity android:name="debsin.thecodework.arfurniture.ui.SignUpActivity" />
-        <meta-data android:name="com.google.ar.core" android:value="required" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
     </application>
 
 </manifest>
