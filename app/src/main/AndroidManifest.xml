@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.arproject">
+    package="debsin.thecodework.arfurniture">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -25,16 +25,16 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".ui.DetailsActivity"
+            android:name="debsin.thecodework.arfurniture.ui.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.DashboardActivity"
+            android:name="debsin.thecodework.arfurniture.ui.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.ViewARModelActivity"
+            android:name="debsin.thecodework.arfurniture.ui.ViewARModelActivity"
             android:exported="false" />
         <activity
-            android:name=".splashScreen.SplashScreenActivity"
+            android:name="debsin.thecodework.arfurniture.splashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,10 +43,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".splashScreen.OnBoardingScreen1" />
-        <activity android:name=".splashScreen.OnBoardingScreen2" />
-        <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.SignUpActivity" />
+        <activity android:name="debsin.thecodework.arfurniture.splashScreen.OnBoardingScreen1" />
+        <activity android:name="debsin.thecodework.arfurniture.splashScreen.OnBoardingScreen2" />
+        <activity android:name="debsin.thecodework.arfurniture.ui.LoginActivity" />
+        <activity android:name="debsin.thecodework.arfurniture.ui.SignUpActivity" />
         <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
 

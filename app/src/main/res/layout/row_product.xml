@@ -6,7 +6,7 @@
 
         <variable
             name="modelCategory"
-            type="com.example.arproject.model.ModelCategory" />
+            type="debsin.thecodework.arfurniture.model.ModelCategory" />
     </data>
 
     <LinearLayout
