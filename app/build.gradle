@@ -11,8 +11,8 @@ android {
         applicationId "debsin.thecodework.arfurniture"
         minSdk 24
         targetSdk 32
-        versionCode 5
-        versionName "v1.0.0"
+        versionCode 6
+        versionName "v1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
