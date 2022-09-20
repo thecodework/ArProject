@@ -44,7 +44,12 @@ class LoginActivity : AppCompatActivity() {
                 if (isValidEmail(email)) {
                     if (isValidPassword(password)) {
                         if (password.length > 8) {
-                            changeClass()
+                            if (email == "info@thecodework.com" && password == "ValidPassword12345") {
+                                changeClass()
+                            }else{
+                                showDialog(this, "Wrong Email & Password")
+                                pDialog!!.hideProgressDialog()
+                            }
                         } else {
                             showDialog(this, "Password should be greater than 8 digit")
                             pDialog!!.hideProgressDialog()
