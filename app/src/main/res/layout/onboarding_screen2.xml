@@ -34,7 +34,7 @@
             android:shadowRadius="1.8"
             android:text="@string/innovation_lab"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvHomeMeets"

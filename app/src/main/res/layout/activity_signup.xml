@@ -34,7 +34,7 @@
             android:shadowRadius="1.8"
             android:text="@string/innovation_lab"
             android:textColor="#000000"
-            android:textSize="@dimen/text_18" />
+            android:textSize="@dimen/text_14" />
 
         <EditText
             android:id="@+id/edName"
