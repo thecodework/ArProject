@@ -54,6 +54,7 @@
     <dimen name="space_500">500dp</dimen>
     <dimen name="space_600">600dp</dimen>
 
+    <dimen name="text_14">14sp</dimen>
     <dimen name="text_16">16sp</dimen>
     <dimen name="text_18">18sp</dimen>
     <dimen name="text_20">20sp</dimen>
